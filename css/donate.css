@@ -1,0 +1,81 @@
+.donate {
+	height: 80px;
+	/*border-bottom: 1px solid #f2f2f2;*/
+}
+.donate .list, .list li {
+	list-style: none;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	/*min-height:240px;
+	position: absolute;
+	width:100%;*/
+}
+.donate #donateBox {
+	left: calc(50% - 150px);
+	top: calc(70% - 15px);
+	background-color: #fff;
+	/*border-radius: 6px;*/
+	width: 303px;
+	height: 28px;
+	float: left;
+	position: fixed;
+	transition: all .3s;
+}
+.donate #donateBox li {
+	width: 100px;
+	float: left;
+	text-align: center;
+	background: no-repeat center center;
+	background-size: 45px;
+	transition: all .3s;
+	cursor: pointer;
+	overflow: hidden;
+	line-height: 600px;
+	height: 28px;
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+	opacity: 1;
+	display: inline;
+	-webkit-perspective: 500px;
+	-moz-perspective: 500px;
+	perspective: 500px;
+}
+.donate #donateBox li:hover {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	opacity: 1;
+}
+.donate #donateBox #BTC {
+	background-image: url(/images/bitcoin.svg);
+}
+.donate #donateBox #AliPay {
+	background-image: url(/images/alipay.svg);
+}
+.donate #donateBox #WeChat {
+	background-image: url(/images/wechat.svg);
+}
+.donate #QRBox {
+	top: 0;
+	left: 0;
+	background-color: rgba(255,255,255,0.3);
+	display: none;
+	perspective: 400px;
+	position: fixed;
+	width: 100%;
+	height: 60%;
+	z-index: 1;
+}
+.donate #MainBox {
+	cursor: pointer;
+	position: absolute;
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	left: calc(50% - 100px);
+	top: -100px;
+	background: #fff no-repeat center center;
+	background-size: 190px;
+	border-radius: 6px;
+	z-index: 1;
+}
