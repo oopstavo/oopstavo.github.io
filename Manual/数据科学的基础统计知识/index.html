@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Author Name,name@example.com"><title>数据科学的基础统计和概率知识·Xihao</title><!-- hexo-inject:begin --><!-- hexo-inject:end --><meta name="description" content="了解了统计之后，发现统计其实是一种世界观。
+
+
+统计推断和概率论的区别：The basic problem that we study in probability is: Given a data generating process, what are the properities of th"><meta name="keywords" content="Hexo,HTML,CSS,android,Linux"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/donate.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><script type="text/javascript" src="/js/donate.js"></script><script>var coindesk = "https://blockchain.info/ticker";
+var getJSON = function(url) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+        var status = xhr.status;
+        if (status == 200) {
+            document.getElementById("bprice").innerHTML = xhr.response.CNY.last;
+        } else {
+            document.getElementById("bprice").innerHTML = xhr.response.status;
+        };
+    };
+    xhr.send();
+};
+getJSON(coindesk);
+</script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+    menuSettings: {
+    zoom: "None"
+    },
+    showMathMenu: false,
+    jax: ["input/TeX","output/CommonHTML"],
+    extensions: ["tex2jax.js"],
+    TeX: {
+    extensions: ["AMSmath.js","AMSsymbols.js"],
+    equationNumbers: {
+        autoNumber: "AMS"
+    }
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]]
+    }
+});
+</script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js"></script><meta name="generator" content="Hexo 4.2.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head><body><!-- 引入 sidebar.jade--><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><h3 title=""><a href="/">Xihao</a></h3></div></div><ul class="social-links"><li><a href="http://weibo.com/lxh56b"><i class="fa fa-weibo"></i></a></li></ul><div style="vertical-align:middle; text-align:center"><img src="/images/home.jpg" height="30%" width="30%"></div><div class="footer"><a target="_blank" href="#">日拱一卒，不期速成</a><br><a class="copyright" href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><a class="copyright" href="#">x</a><a class="copyright" href="https://github.com/Ben02/hexo-theme-Anatole">  Anatole </a><br><p><strong>常去 &nbsp;&nbsp;</strong><a href="https://bbs.byr.cn">北邮人论坛 &nbsp;</a><a href="http://jandan.net/">煎蛋 &nbsp;</a><a href="https://www.reddit.com">Reddit &nbsp;</a><a href="https://github.com">Github &nbsp;</a><a href="https://douban.fm">豆瓣 FM &nbsp;</a><a href="https://readhub.me">Readhub &nbsp;</a><a href="https://www.v2ex.com">V2EX &nbsp;</a></p><p><strong>BTC &nbsp;&nbsp;</strong><a href="https://blockchain.info/zh-cn/wallet">Blockchain Wallet &nbsp;</a><a href="https://btc.com">BTC &nbsp;</a><a href="https://www.okcoin.cn">OKCoin &nbsp;</a></p><P><strong>BLOG &nbsp;&nbsp;</strong><a href="http://www.ruanyifeng.com/blog/">阮一峰 &nbsp;</a></P><P><strong>前端 &nbsp;&nbsp;</strong><a href="http://www.colorhexa.com">ColorHexa &nbsp;</a><a href="https://500px.com">500px &nbsp;</a><a href="https://codepen.io">CodePen &nbsp;</a></P><p><strong>其他 &nbsp;&nbsp;</strong><a href="https://sg.godaddy.com/zh?isc=ISC">GoDaddy &nbsp;</a><a href="https://www.aliyun.com">Aliyun &nbsp;</a></p><p><i class="fa fa-btc">&nbsp;</i><a id="bprice" href="#"> </a>&nbsp;&nbsp;<i class="fa fa-paper-plane">&nbsp;</i><a id="busuanzi_container_site_pv" href="#"><a id="busuanzi_value_site_pv" href="#"> </a></a>&nbsp;&nbsp;<i class="fa fa-paper-plane-o">&nbsp;</i><a id="busuanzi_container_site_uv" href="#"><a id="busuanzi_value_site_uv" href="#"></a></a></p></div></div><div class="main"><!-- 引入 nav.jade--><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">All</a></li><li><a href="/categories/CS/">CS</a></li><li><a href="/categories/Manual/">Manual</a></li><li><a href="/categories/Blockchain/">Blockchain</a></li><li><a href="/categories/Reading/">Reading</a></li><li><a href="/categories/Others/">Others</a></li><li><a href="/About/">About</a></li></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>数据科学的基础统计和概率知识</a></h3></div><div class="post-content"><p>了解了统计之后，发现统计其实是一种世界观。</p>
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><hr>
+<blockquote>
+<p>统计推断和概率论的区别：<br>The basic problem that we study in probability is: Given a data generating process, what are the properities of the outcomes?<br>The basic problem of statistical inference is the inverse of probability: Given the outcomes, what can we say about the process that generated the data?</p>
+</blockquote>
+<p>概率论是统计推断的基础，在给定数据生成过程下观测、研究数据的性质；而统计推断则根据观测的数据，反向思考其数据生成过程。预测、分类、聚类、估计等，都是统计推断的特殊形式，强调对于数据生成过程的研究。</p>
+<p><img src="https://betterexplained.com/wp-content/uploads/2012/09/probability_vs_stats.png" alt="Difference between sta and prob."></p>
+<blockquote>
+<h3 id="平均数-Mean"><a href="#平均数-Mean" class="headerlink" title="平均数 Mean"></a>平均数 Mean</h3></blockquote>
+<p>平均数没有你想象的那么简单。平均数是一个统计量，是试验后根据实际结果得到的样本的平均值。与之前相对应的，在概率论中的值叫期望。<br><strong> 平均数的意义是，对于数列<code>An</code>，用某一个常数<code>A</code>对数列中的每一项进行替换，形成的新数列结果上与旧数列等效。这个常数<code>A</code>就是数列<code>An</code>的平均数。</strong><br>常用到的平均数有三种，<em> 算术平均数 </em>，<em> 几何平均数</em>，还有<em>调和平均数</em>。</p>
+<h4 id="算术平均数"><a href="#算术平均数" class="headerlink" title="算术平均数"></a>算术平均数</h4><p>算术平均数非常简单，就是对一个数列<code>An</code>中的所有项进行求和，然后除以数量。</p>
+<script type="math/tex; mode=display">\bar{x}=\frac{x_1+x_2+...+x_n}{n}</script><p>算术平均数是最常用的，也是最常用错的一个统计值。<br>算术平均数更少的收到随机因素的影响，但是更容易受到极端值的影响。所以在国际比赛的评分中，要去掉一个最高分，去掉一个最低分，然后再算平均分（裁剪平均值 Truncated mean）。</p>
+<h4 id="几何平均数"><a href="#几何平均数" class="headerlink" title="几何平均数"></a>几何平均数</h4><p>几何平均数就是对数列<code>An</code>中的所有项相乘，然后再开<code>N</code>次方：</p>
+<script type="math/tex; mode=display">\bar{x}=\sqrt[n]{x_1x_2x_3...x_n}</script><p>几何平均数经常用来算平均增长率。在推荐系统中，其实也可以用来对同类商品进行排名。比如，有两款相机，一款的变焦为<code>200</code>，品质为<code>8</code>；另外一款的变焦为<code>250</code>，品质为<code>6</code>，对这两款相机排名的话，可以用几何平均数。第一款的结果为<code>40</code>，第二款的结果为<code>38.7</code>。</p>
+<h4 id="调和平均数-Harmonic-mean"><a href="#调和平均数-Harmonic-mean" class="headerlink" title="调和平均数 Harmonic mean"></a>调和平均数 Harmonic mean</h4><p>调和平均数又称倒数平均数，是数列<code>An</code>中所有项的倒数的算术平均数的倒数。</p>
+<script type="math/tex; mode=display">H=\frac{n}{\frac{1}{x_1}+\frac{1}{x_2}+...+\frac{1}{x_n}}</script><p>调和平均数给了小值更大的权重。在数据科学中，F1 Score 的值就是准确率和召回率的调和平均数。</p>
+<p><strong> <em> 平均数不等式：算术平均数&gt;几何平均数&gt;调和平均数 </em> </strong></p>
+<blockquote>
+<h3 id="期望"><a href="#期望" class="headerlink" title="期望"></a>期望</h3></blockquote>
+<p>期望是一种概率论概念。期望是实验前根据概率分布预测的样本的平均值，是上帝视角对实验结果的预知。实验进行无限多次的平均值会无限接近期望。期望就是平均数随样本趋于无穷的极限。  </p>
+<script type="math/tex; mode=display">E(X) = \sum_{k=1}^{\infty}x_kp_k</script><blockquote>
+<h3 id="方差和标准差"><a href="#方差和标准差" class="headerlink" title="方差和标准差"></a>方差和标准差</h3></blockquote>
+<h4 id="方差-Variance"><a href="#方差-Variance" class="headerlink" title="方差 Variance"></a>方差 Variance</h4><p>方差是用来衡量随机变量或一组数据的离散程度的量。概率论中，方差是用来随机变量和数学期望之间的偏离程度。在统计学中，方差是各个样本数据和平均数之间的偏离程度。<br>所以在概率论中的方差公式：</p>
+<script type="math/tex; mode=display">Var(X)=E\{\sum[X-E(X)]^2\}</script><p>在统计学中的方差公式：<br>总体方差公式：(<script type="math/tex">\mu</script>为总体均值)</p>
+<script type="math/tex; mode=display">\sigma^2=\frac{\sum(X-\mu)^2}{N}</script><p>样本方差公式：(<script type="math/tex">\bar{x}</script>为样本均值)</p>
+<script type="math/tex; mode=display">S^2=\frac{\sum(X-\bar{x})^2}{n-1}</script><p>为什么样本方差的分母需要<code>-1</code>呢？为了能够得到更准确的结论，需要在采集样本的时候需要做到样本之间相互独立，即样本之间应该没有任何联系，不能够通过某些样本来推测另一些样本。但是公式中样本平均值的引入，使得原本相互独立的样本，变得没有那么独立。因为可以通过平均值，和<code>n-1</code>个样本值，来推测出剩下的一个样本值，从而样本的自由度减少了1，也就是说只有<code>n-1</code>个相互独立的样本。所以分母需要做<code>-1</code>处理。这个处理叫做贝塞尔校正（Bessel’s Correction）。并且样本平均值的引入，使得公式存在误差，会使样本方差变得比总体方差小，所以需要平衡。<br>如果不做贝塞尔校正的话，在样本量小的时候，样本方差会比全体方差偏小。在样本量大的时候，偏差逐渐减少，直到可以忽略不计。</p>
+<p>全体方差是一个事实(fact)，样本方差是对事实的一个推测（Estimation)<br>贝塞尔校正的推倒： <a href="http://math.oxford.emory.edu/site/math117/besselCorrection/">http://math.oxford.emory.edu/site/math117/besselCorrection/</a></p>
+<h4 id="标准差-St"><a href="#标准差-St" class="headerlink" title="标准差 St"></a>标准差 St</h4><blockquote>
+<h3 id="常用公式"><a href="#常用公式" class="headerlink" title="常用公式"></a>常用公式</h3></blockquote>
+<p>条件概率: <script type="math/tex">P(B|A)=\frac{P(AB)}{P(A)}</script><br>乘法定则: <script type="math/tex">P(A_1A_2...A_n)=P(A_n|A_1A_2...A_{n-1})P(A_{n-1}|A_1A_2...A_{n-2})...P(A_2|A_1)P(A_1)</script></p>
+<hr>
+<p>贝叶斯公式: <script type="math/tex">P(B_i|A)=\frac{P(A|B_i)P(B_i)}{\sum_{j=1}^nP(A|B_j)P(B_j)},i=1,2,...,n</script><br>当 n=2 时, <script type="math/tex">P(A)=P(A|B)P(B)+P(A|\bar{B})P(\bar{B})</script></p>
+<p>test</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><span class="date">2020-06-11</span><a class="tag" href="/categories/Manual/" title="Manual">@Manual </a><a class="tag" href="/tags/cs/" title="cs">#cs </a></div></div></div></div><div class="post animated fadeInDown"><p style="text-align:center;color:#5F5F5F;">如果文章帮助到您，欢迎打赏</p><p style="text-align:center;color:#5F5F5F;">明天的煎饼就可以加两个蛋咯</p><p style="text-align:center;color:#5F5F5F;">୧(˶‾᷄ ⁻̫ ‾᷅˵)୨</p><div class="donate"><ul class="list" id="donateBox"><li id="BTC"></li><li id="AliPay"></li><li id="WeChat"></li></ul><div id="QRBox"><div id="MainBox"></div></div></div></div><a id="comments"></a><div id="disqus_thread"></div><script>var disqus_shortname = 'lxh56b';
+var disqus_identifier = 'Manual/数据科学的基础统计知识/';
+var disqus_title = '数据科学的基础统计和概率知识';
+var disqus_url = 'https://liuxihao.com/Manual/数据科学的基础统计知识/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//#{theme.disqus}.disqus.com/count.js" async></script></div></div></div></div><!-- hexo-inject:begin --><!-- hexo-inject:end --></body></html>
