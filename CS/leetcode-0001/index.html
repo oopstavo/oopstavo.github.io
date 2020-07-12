@@ -1,5 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Author Name,name@example.com"><title>LeetCode-0001 Two Sum·oopstavo</title><meta name="description" content="0001.Two Sum (link)  DescriptionGiven an array of integers, return indices of the two numbers such that they add up to a specific target.
-You may assu"><meta name="keywords" content="Hexo,HTML,CSS,android,Linux"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/donate.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><script type="text/javascript" src="/js/donate.js"></script><script>var coindesk = "https://blockchain.info/ticker";
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Author Name,name@example.com"><title>LeetCode-0001 Two Sum·oopstavo</title><meta name="description" content="0001.Two Sum (link)  DescriptionGiven an array of integers, return indices of the two numbers such that they add up to a specific target.You may assum"><meta name="keywords" content="Hexo,HTML,CSS,android,Linux"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/donate.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><script type="text/javascript" src="/js/donate.js"></script><script>var coindesk = "https://blockchain.info/ticker";
 var getJSON = function(url) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
@@ -33,27 +32,111 @@ getJSON(coindesk);
     displayMath: [["\\[", "\\]"]]
     }
 });
-</script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js"></script><meta name="generator" content="Hexo 4.2.1"></head><body><!-- 引入 sidebar.jade--><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><h3 title=""><a href="/">oopstavo</a></h3></div></div><ul class="social-links"><li><a href="http://weibo.com/u/6851063036"><i class="fa fa-weibo"></i></a></li></ul><div style="vertical-align:middle; text-align:center"><img src="/images/home.jpg" height="30%" width="30%"></div><div class="footer"><a target="_blank" href="#">日拱一卒，不期速成</a><br><a class="copyright" href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><a class="copyright" href="#">x</a><a class="copyright" href="https://github.com/Ben02/hexo-theme-Anatole">  Anatole </a><br><p><strong>常去 &nbsp;&nbsp;</strong><a href="https://bbs.byr.cn">北邮人论坛 &nbsp;</a><a href="http://jandan.net/">煎蛋 &nbsp;</a><a href="https://www.reddit.com">Reddit &nbsp;</a><a href="https://github.com">Github &nbsp;</a><a href="https://douban.fm">豆瓣 FM &nbsp;</a><a href="https://readhub.me">Readhub &nbsp;</a><a href="https://www.v2ex.com">V2EX &nbsp;</a></p><p><strong>BTC &nbsp;&nbsp;</strong><a href="https://blockchain.info/zh-cn/wallet">Blockchain Wallet &nbsp;</a><a href="https://btc.com">BTC &nbsp;</a><a href="https://www.okcoin.cn">OKCoin &nbsp;</a></p><P><strong>BLOG &nbsp;&nbsp;</strong><a href="http://www.ruanyifeng.com/blog/">阮一峰 &nbsp;</a></P><P><strong>前端 &nbsp;&nbsp;</strong><a href="http://www.colorhexa.com">ColorHexa &nbsp;</a><a href="https://500px.com">500px &nbsp;</a><a href="https://codepen.io">CodePen &nbsp;</a></P><p><strong>其他 &nbsp;&nbsp;</strong><a href="https://sg.godaddy.com/zh?isc=ISC">GoDaddy &nbsp;</a><a href="https://www.aliyun.com">Aliyun &nbsp;</a></p><p><i class="fa fa-btc">&nbsp;</i><a id="bprice" href="#"> </a>&nbsp;&nbsp;<i class="fa fa-paper-plane">&nbsp;</i><a id="busuanzi_container_site_pv" href="#"><a id="busuanzi_value_site_pv" href="#"> </a></a>&nbsp;&nbsp;<i class="fa fa-paper-plane-o">&nbsp;</i><a id="busuanzi_container_site_uv" href="#"><a id="busuanzi_value_site_uv" href="#"></a></a></p></div></div><div class="main"><!-- 引入 nav.jade--><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">All</a></li><li><a href="/categories/CS/">CS</a></li><li><a href="/categories/Manual/">Manual</a></li><li><a href="/categories/Blockchain/">Blockchain</a></li><li><a href="/categories/Reading/">Reading</a></li><li><a href="/categories/Others/">Others</a></li><li><a href="/About/">About</a></li></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>LeetCode-0001 Two Sum</a></h3></div><div class="post-content"><h3 id="0001-Two-Sum-link"><a href="#0001-Two-Sum-link" class="headerlink" title="0001.Two Sum (link)"></a>0001.Two Sum (<a href="https://leetcode.com/problems/two-sum/">link</a>)</h3><h4 id=""><a href="#" class="headerlink" title="  "></a><img src="https://img.shields.io/badge/Tag-Array-brightgreen.svg" alt=""> <img src="https://img.shields.io/badge/Difficulty-Easy-brightgreen.svg" alt=""> <img src="https://img.shields.io/badge/Python-3.7-yellow.svg" alt=""></h4><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>Given an array of integers, return indices of the two numbers such that they add up to a specific target.</p>
-<p>You may assume that each input would have exactly one solution, and you may not use the same element twice.</p>
-<h3 id="1-1-Basic-method"><a href="#1-1-Basic-method" class="headerlink" title="1.1 Basic method"></a>1.1 Basic method</h3><p><strong>Idea</strong>:  Loop the list nums, and try to find if sum of the item and one of following items equal to the target. If the sum is equal to the target, return index of these two items.  </p>
-<p><strong>Time Complexity</strong>: <code>O(n^2)</code></p>
+</script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js"></script><meta name="generator" content="Hexo 4.2.1"></head><body><!-- 引入 sidebar.jade--><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><h3 title=""><a href="/">oopstavo</a></h3></div></div><ul class="social-links"><li><a href="http://weibo.com/u/6851063036"><i class="fa fa-weibo"></i></a></li></ul><div style="vertical-align:middle; text-align:center"><img src="/images/home.jpg" height="30%" width="30%"></div><div class="footer"><a target="_blank" href="#">日拱一卒，不期速成</a><br><a class="copyright" href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><a class="copyright" href="#">x</a><a class="copyright" href="https://github.com/Ben02/hexo-theme-Anatole">  Anatole </a><br><p><strong>常去 &nbsp;&nbsp;</strong><a href="https://bbs.byr.cn">北邮人论坛 &nbsp;</a><a href="http://jandan.net/">煎蛋 &nbsp;</a><a href="https://www.reddit.com">Reddit &nbsp;</a><a href="https://github.com">Github &nbsp;</a><a href="https://douban.fm">豆瓣 FM &nbsp;</a><a href="https://readhub.me">Readhub &nbsp;</a><a href="https://www.v2ex.com">V2EX &nbsp;</a></p><p><strong>BTC &nbsp;&nbsp;</strong><a href="https://blockchain.info/zh-cn/wallet">Blockchain Wallet &nbsp;</a><a href="https://btc.com">BTC &nbsp;</a><a href="https://www.okcoin.cn">OKCoin &nbsp;</a></p><P><strong>BLOG &nbsp;&nbsp;</strong><a href="http://www.ruanyifeng.com/blog/">阮一峰 &nbsp;</a></P><P><strong>前端 &nbsp;&nbsp;</strong><a href="http://www.colorhexa.com">ColorHexa &nbsp;</a><a href="https://500px.com">500px &nbsp;</a><a href="https://codepen.io">CodePen &nbsp;</a></P><p><strong>其他 &nbsp;&nbsp;</strong><a href="https://sg.godaddy.com/zh?isc=ISC">GoDaddy &nbsp;</a><a href="https://www.aliyun.com">Aliyun &nbsp;</a></p><p><i class="fa fa-btc">&nbsp;</i><a id="bprice" href="#"> </a>&nbsp;&nbsp;<i class="fa fa-paper-plane">&nbsp;</i><a id="busuanzi_container_site_pv" href="#"><a id="busuanzi_value_site_pv" href="#"> </a></a>&nbsp;&nbsp;<i class="fa fa-paper-plane-o">&nbsp;</i><a id="busuanzi_container_site_uv" href="#"><a id="busuanzi_value_site_uv" href="#"></a></a></p></div></div><div class="main"><!-- 引入 nav.jade--><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">All</a></li><li><a href="/categories/CS/">CS</a></li><li><a href="/categories/Manual/">Manual</a></li><li><a href="/categories/Blockchain/">Blockchain</a></li><li><a href="/categories/Reading/">Reading</a></li><li><a href="/categories/Others/">Others</a></li><li><a href="/About/">About</a></li></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>LeetCode-0001 Two Sum</a></h3></div><div class="post-content"><h3 id="0001-Two-Sum-link"><a href="#0001-Two-Sum-link" class="headerlink" title="0001.Two Sum (link)"></a>0001.Two Sum (<a href="https://leetcode.com/problems/two-sum/">link</a>)</h3><h4 id=""><a href="#" class="headerlink" title="  "></a><img src="https://img.shields.io/badge/Tag-Array-brightgreen.svg" alt=""> <img src="https://img.shields.io/badge/Difficulty-Easy-brightgreen.svg" alt=""> <img src="https://img.shields.io/badge/Python-3.7-yellow.svg" alt=""></h4><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>Given an array of integers, return indices of the two numbers such that they add up to a specific target.<br>You may assume that each input would have exactly one solution, and you may not use the same element twice.</p>
+<h3 id="1-1-Basic-method"><a href="#1-1-Basic-method" class="headerlink" title="1.1 Basic method"></a>1.1 Basic method</h3><p><strong>Thought</strong>:<br>Loop the list nums, and try to find if sum of the item and one of following items equal to the target. If the sum is equal to the target, return index of these two items.<br>遍历列表中的元素，找出该元素后面的元素是否和该元素的和为target。如果和为target，则返回二者的index。</p>
+<p><strong>Time Complexity</strong>: <code>O(0.5*n^2)</code></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">twoSum</span><span class="params">(self, nums: List[int], target: int)</span> -&gt; List[int]:</span></span><br><span class="line">        <span class="comment"># Basic Method</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(nums)):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> range(i+<span class="number">1</span>, len(nums)):</span><br><span class="line">                <span class="keyword">if</span> nums[i] + nums[j] == target:</span><br><span class="line">                    <span class="keyword">return</span>[i,j]</span><br></pre></td></tr></table></figure>
 
-<h3 id="1-2-Fastest-method"><a href="#1-2-Fastest-method" class="headerlink" title="1.2 Fastest method"></a>1.2 Fastest method</h3><p><strong>Idea</strong>: Try to create a dictionary stores the <code>value:index</code> pair, if the difference between target and an item is in the dictionary, then return index, if not then update the dictionary. This method is just loop nums once. And can skip the situation that one item equal to the difference between target and itself, since the first time come across the item, the difference(item itself) isn’t in the dictionary.  </p>
+<h3 id="1-2-Fastest-method"><a href="#1-2-Fastest-method" class="headerlink" title="1.2 Fastest method"></a>1.2 Fastest method</h3><p><strong>Thought</strong>:<br>Try to create a dictionary stores the <code>value:index</code> pair, if the difference between target and an item is in the dictionary, then return index, if not then update the dictionary. This method is just loop nums once. And can skip the situation that one item equal to the difference between target and itself, since the first time come across the item, the difference(item itself) isn’t in the dictionary.<br>声明一个字典变量，每次遍历nums的时候，检查在该字典变量中是否存在以target和这个元素的差值的键，如果存在则取出字典中键对应的值，连同遍历元素的index返回。如果不存在，则更新字典，以遍历元素的值为键，index为值。这种方法仅需要遍历nums一次，与第一种方法不同，这种方法是寻找遍历元素之前是否存在合适的值，不存在则更新字典，把之前遍历过的值以及index记录下来。</p>
 <p><strong>Time Complexity</strong>: <code>O(n)</code></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">twoSum</span><span class="params">(self, nums: List[int], target: int)</span> -&gt; List[int]:</span></span><br><span class="line">        <span class="comment"># Fastest Method</span></span><br><span class="line">        dic = &#123;&#125;</span><br><span class="line">        <span class="keyword">for</span> i, v <span class="keyword">in</span> enumerate(nums):</span><br><span class="line">            <span class="keyword">if</span> target-v <span class="keyword">in</span> dic:</span><br><span class="line">                <span class="keyword">return</span> [dic[target-v], i]</span><br><span class="line">            <span class="comment"># Update the dictionary</span></span><br><span class="line">            dic[v] = i</span><br></pre></td></tr></table></figure>
 
-<h3 id="1-3-Shortest-method-Code-Golf"><a href="#1-3-Shortest-method-Code-Golf" class="headerlink" title="1.3 Shortest method (Code Golf)"></a>1.3 Shortest method (Code Golf)</h3><p><strong>Idea</strong>: Try to find the difference in the remaining list, and return the index pair. This method can skip the situation that the difference is the same as the item.  </p>
-<p><strong>Time Complexity</strong>: <code>O(n^2)</code></p>
+<h3 id="1-3-Shortest-method-Code-Golf"><a href="#1-3-Shortest-method-Code-Golf" class="headerlink" title="1.3 Shortest method (Code Golf)"></a>1.3 Shortest method (Code Golf)</h3><p><strong>Thought</strong>:<br>Try to find the difference in the remaining list, and return the index pair. This method can skip the situation that the difference is the same as the item.<br>因为可以假设有且只有一个解，那么可以直接返回<code>nums</code>中元素和<code>target</code>与该元素差值的<code>index</code>。如果报错，<code>pass</code>后寻找下一个元素。<br><strong>Time Complexity</strong>: <code>O(n^2)</code></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">twoSum</span><span class="params">(self, nums: List[int], target: int)</span> -&gt; List[int]:</span></span><br><span class="line">        <span class="comment"># Shortest Method</span></span><br><span class="line">        <span class="keyword">for</span> i,v <span class="keyword">in</span> enumerate(nums):</span><br><span class="line">            <span class="keyword">try</span>: <span class="keyword">return</span> [i, nums.index(target-v,i+<span class="number">1</span>,)]</span><br><span class="line">            <span class="keyword">except</span>: <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
 
 
 <h3 id="1-4-Summary"><a href="#1-4-Summary" class="headerlink" title="1.4 Summary"></a>1.4 Summary</h3><ol>
-<li>Try to avoid use <code>list.index()</code>, since time complexity of <code>list.index(i)</code> is O(n) (<a href="https://stackoverflow.com/questions/5913671/complexity-of-list-indexx-in-python">reference</a>). <code>list.index(x[, start[, end]])</code> returns the index in the original list.</li>
-<li>Ways to remove item from a list:<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> list.pop([index]): The pop() method removes the item at the given index <span class="keyword">from</span> the list <span class="keyword">and</span> returns the removed item. Default <span class="keyword">is</span> remove the last element.</span><br><span class="line"><span class="number">2.</span> list.remove(element): The remove() method removes the first matching element (which <span class="keyword">is</span> passed <span class="keyword">as</span> an argument) <span class="keyword">from</span> the list. Return <span class="literal">None</span>.</span><br><span class="line"><span class="number">3.</span> Slice a list to remove item. list[:<span class="number">2</span>] + list[<span class="number">3</span>:].</span><br><span class="line"><span class="number">4.</span> <span class="keyword">del</span> list[<span class="number">10</span>]. Return <span class="literal">None</span>.</span><br><span class="line"><span class="number">5.</span> list.clear() will remove all items <span class="keyword">in</span> a list.</span><br></pre></td></tr></table></figure></li>
-<li><code>enumerate</code> is more efficient than <code>range()</code> or something when you want to loop a list and get the index of items.</li>
-<li>Hashtable(dictionary in Python) is more efficient.</li>
+<li><code>enumerate(sequence, [start=0])</code>is an iterator in Python, and the time complexity of <code>enumerate(sequence, [start=0])</code> is <code>O(1)</code></li>
+<li>Most of the dictionarty operations is O(1).</li>
 </ol>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Example</th>
+<th>Complexity Class</th>
+<th>In-place or Not</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Index</td>
+<td>d[k]</td>
+<td>O(1)</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr>
+<td>Store</td>
+<td>d[k] = v</td>
+<td>O(1)</td>
+<td>In-place</td>
+<td></td>
+</tr>
+<tr>
+<td>Length</td>
+<td>len(d)</td>
+<td>O(1)</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr>
+<td>Delete</td>
+<td>del d[k]</td>
+<td>O(1)</td>
+<td>In-place</td>
+<td></td>
+</tr>
+<tr>
+<td>get/setdefault</td>
+<td>d.get(k)</td>
+<td>O(1)</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr>
+<td>Pop</td>
+<td>d.pop(k)</td>
+<td>O(1)</td>
+<td>In-place</td>
+<td></td>
+</tr>
+<tr>
+<td>Pop item</td>
+<td>d.popitem()</td>
+<td>O(1)</td>
+<td>In-place</td>
+<td>popped item “randomly” selected</td>
+</tr>
+<tr>
+<td>Clear</td>
+<td>d.clear()</td>
+<td>O(1)</td>
+<td>In-place</td>
+<td>similar to s = {} or = dict()</td>
+</tr>
+<tr>
+<td>View</td>
+<td>d.keys()/d.values()</td>
+<td>O(1)</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr>
+<td>Construction</td>
+<td>dict(…)</td>
+<td>O(len(…))</td>
+<td>N/A</td>
+<td>depends # (key,value) 2-tuples</td>
+</tr>
+<tr>
+<td>Iteration</td>
+<td>for k in d:</td>
+<td>O(N)</td>
+<td>N/A</td>
+<td>all forms: keys, values, items</td>
+</tr>
+</tbody></table>
 </div><div class="post-footer"><div class="meta"><div class="info"><span class="date">2020-07-08</span><a class="tag" href="/categories/CS/" title="CS">@CS </a><a class="tag" href="/tags/Leetcode/" title="Leetcode">#Leetcode </a><a class="tag" href="/tags/Array/" title="Array">#Array </a><a class="tag" href="/tags/Python/" title="Python">#Python </a></div></div></div></div><div class="post animated fadeInDown"><p style="text-align:center;color:#5F5F5F;">如果文章帮助到您，欢迎打赏</p><p style="text-align:center;color:#5F5F5F;">明天的煎饼就可以加两个蛋咯</p><p style="text-align:center;color:#5F5F5F;">୧(˶‾᷄ ⁻̫ ‾᷅˵)୨</p><div class="donate"><ul class="list" id="donateBox"><li id="BTC"></li><li id="AliPay"></li><li id="WeChat"></li></ul><div id="QRBox"><div id="MainBox"></div></div></div></div><a id="comments"></a><div id="disqus_thread"></div><script>var disqus_shortname = 'oopstavo';
 var disqus_identifier = 'CS/leetcode-0001/';
 var disqus_title = 'LeetCode-0001 Two Sum';
