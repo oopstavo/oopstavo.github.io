@@ -47,96 +47,99 @@ getJSON(coindesk);
 
 <h3 id="1-4-Summary"><a href="#1-4-Summary" class="headerlink" title="1.4 Summary"></a>1.4 Summary</h3><ol>
 <li><code>enumerate(sequence, [start=0])</code>is an iterator in Python, and the time complexity of <code>enumerate(sequence, [start=0])</code> is <code>O(1)</code></li>
-<li>Most of the dictionarty operations is O(1).</li>
-</ol>
-<table>
+<li>Most of the dictionarty operations is O(1).<table>
 <thead>
 <tr>
-<th>Operation</th>
-<th>Example</th>
-<th>Complexity Class</th>
-<th>In-place or Not</th>
-<th>Notes</th>
+<th align="left">Operation</th>
+<th align="left">Example</th>
+<th align="left">Complexity Class</th>
+<th align="left">In-place or Not</th>
+<th align="left">Notes</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Index</td>
-<td>d[k]</td>
-<td>O(1)</td>
-<td>N/A</td>
-<td></td>
+<td align="left">Index</td>
+<td align="left">d[k]</td>
+<td align="left">O(1)</td>
+<td align="left">N/A</td>
+<td align="left"></td>
 </tr>
 <tr>
-<td>Store</td>
-<td>d[k] = v</td>
-<td>O(1)</td>
-<td>In-place</td>
-<td></td>
+<td align="left">Store</td>
+<td align="left">d[k] = v</td>
+<td align="left">O(1)</td>
+<td align="left">In-place</td>
+<td align="left"></td>
 </tr>
 <tr>
-<td>Length</td>
-<td>len(d)</td>
-<td>O(1)</td>
-<td>N/A</td>
-<td></td>
+<td align="left">Length</td>
+<td align="left">len(d)</td>
+<td align="left">O(1)</td>
+<td align="left">N/A</td>
+<td align="left"></td>
 </tr>
 <tr>
-<td>Delete</td>
-<td>del d[k]</td>
-<td>O(1)</td>
-<td>In-place</td>
-<td></td>
+<td align="left">Delete</td>
+<td align="left">del d[k]</td>
+<td align="left">O(1)</td>
+<td align="left">In-place</td>
+<td align="left"></td>
 </tr>
 <tr>
-<td>get/setdefault</td>
-<td>d.get(k)</td>
-<td>O(1)</td>
-<td>N/A</td>
-<td></td>
+<td align="left">get/setdefault</td>
+<td align="left">d.get(k)</td>
+<td align="left">O(1)</td>
+<td align="left">N/A</td>
+<td align="left"></td>
 </tr>
 <tr>
-<td>Pop</td>
-<td>d.pop(k)</td>
-<td>O(1)</td>
-<td>In-place</td>
-<td></td>
+<td align="left">Pop</td>
+<td align="left">d.pop(k)</td>
+<td align="left">O(1)</td>
+<td align="left">In-place</td>
+<td align="left"></td>
 </tr>
 <tr>
-<td>Pop item</td>
-<td>d.popitem()</td>
-<td>O(1)</td>
-<td>In-place</td>
-<td>popped item “randomly” selected</td>
+<td align="left">Pop item</td>
+<td align="left">d.popitem()</td>
+<td align="left">O(1)</td>
+<td align="left">In-place</td>
+<td align="left">popped item “randomly” selected</td>
 </tr>
 <tr>
-<td>Clear</td>
-<td>d.clear()</td>
-<td>O(1)</td>
-<td>In-place</td>
-<td>similar to s = {} or = dict()</td>
+<td align="left">Clear</td>
+<td align="left">d.clear()</td>
+<td align="left">O(1)</td>
+<td align="left">In-place</td>
+<td align="left">similar to s = {} or = dict()</td>
 </tr>
 <tr>
-<td>View</td>
-<td>d.keys()/d.values()</td>
-<td>O(1)</td>
-<td>N/A</td>
-<td></td>
+<td align="left">View</td>
+<td align="left">d.keys()/d.values()</td>
+<td align="left">O(1)</td>
+<td align="left">N/A</td>
+<td align="left"></td>
 </tr>
 <tr>
-<td>Construction</td>
-<td>dict(…)</td>
-<td>O(len(…))</td>
-<td>N/A</td>
-<td>depends # (key,value) 2-tuples</td>
+<td align="left">Construction</td>
+<td align="left">dict(…)</td>
+<td align="left">O(len(…))</td>
+<td align="left">N/A</td>
+<td align="left">depends # (key,value) 2-tuples</td>
 </tr>
 <tr>
-<td>Iteration</td>
-<td>for k in d:</td>
-<td>O(N)</td>
-<td>N/A</td>
-<td>all forms: keys, values, items</td>
+<td align="left">Iteration</td>
+<td align="left">for k in d:</td>
+<td align="left">O(N)</td>
+<td align="left">N/A</td>
+<td align="left">all forms: keys, values, items</td>
 </tr>
 </tbody></table>
+</li>
+</ol>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h3><ol>
+<li><a href="https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt">https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt</a> </li>
+</ol>
 </div><div class="post-footer"><div class="meta"><div class="info"><span class="date">2020-07-08</span><a class="tag" href="/categories/CS/" title="CS">@CS </a><a class="tag" href="/tags/Leetcode/" title="Leetcode">#Leetcode </a><a class="tag" href="/tags/Array/" title="Array">#Array </a><a class="tag" href="/tags/Python/" title="Python">#Python </a></div></div></div></div><div class="post animated fadeInDown"><p style="text-align:center;color:#5F5F5F;">如果文章帮助到您，欢迎打赏</p><p style="text-align:center;color:#5F5F5F;">明天的煎饼就可以加两个蛋咯</p><p style="text-align:center;color:#5F5F5F;">୧(˶‾᷄ ⁻̫ ‾᷅˵)୨</p><div class="donate"><ul class="list" id="donateBox"><li id="BTC"></li><li id="AliPay"></li><li id="WeChat"></li></ul><div id="QRBox"><div id="MainBox"></div></div></div></div><a id="comments"></a><div id="disqus_thread"></div><script>var disqus_shortname = 'oopstavo';
 var disqus_identifier = 'CS/leetcode-0001/';
 var disqus_title = 'LeetCode-0001 Two Sum';
