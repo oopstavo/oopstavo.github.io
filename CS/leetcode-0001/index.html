@@ -36,106 +36,14 @@ getJSON(coindesk);
 <h3 id="1-1-Basic-method"><a href="#1-1-Basic-method" class="headerlink" title="1.1 Basic method"></a>1.1 Basic method</h3><p><strong>Thought</strong>:<br>Loop the list nums, and try to find if sum of the item and one of following items equal to the target. If the sum is equal to the target, return index of these two items.<br>遍历列表中的元素，找出该元素后面的元素是否和该元素的和为target。如果和为target，则返回二者的index。</p>
 <p><strong>Time Complexity</strong>: <code>O(0.5*n^2)</code></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">twoSum</span><span class="params">(self, nums: List[int], target: int)</span> -&gt; List[int]:</span></span><br><span class="line">        <span class="comment"># Basic Method</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(nums)):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> range(i+<span class="number">1</span>, len(nums)):</span><br><span class="line">                <span class="keyword">if</span> nums[i] + nums[j] == target:</span><br><span class="line">                    <span class="keyword">return</span>[i,j]</span><br></pre></td></tr></table></figure>
-
 <h3 id="1-2-Fastest-method"><a href="#1-2-Fastest-method" class="headerlink" title="1.2 Fastest method"></a>1.2 Fastest method</h3><p><strong>Thought</strong>:<br>Try to create a dictionary stores the <code>value:index</code> pair, if the difference between target and an item is in the dictionary, then return index, if not then update the dictionary. This method is just loop nums once. And can skip the situation that one item equal to the difference between target and itself, since the first time come across the item, the difference(item itself) isn’t in the dictionary.<br>声明一个字典变量，每次遍历nums的时候，检查在该字典变量中是否存在以target和这个元素的差值的键，如果存在则取出字典中键对应的值，连同遍历元素的index返回。如果不存在，则更新字典，以遍历元素的值为键，index为值。这种方法仅需要遍历nums一次，与第一种方法不同，这种方法是寻找遍历元素之前是否存在合适的值，不存在则更新字典，把之前遍历过的值以及index记录下来。</p>
 <p><strong>Time Complexity</strong>: <code>O(n)</code></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">twoSum</span><span class="params">(self, nums: List[int], target: int)</span> -&gt; List[int]:</span></span><br><span class="line">        <span class="comment"># Fastest Method</span></span><br><span class="line">        dic = &#123;&#125;</span><br><span class="line">        <span class="keyword">for</span> i, v <span class="keyword">in</span> enumerate(nums):</span><br><span class="line">            <span class="keyword">if</span> target-v <span class="keyword">in</span> dic:</span><br><span class="line">                <span class="keyword">return</span> [dic[target-v], i]</span><br><span class="line">            <span class="comment"># Update the dictionary</span></span><br><span class="line">            dic[v] = i</span><br></pre></td></tr></table></figure>
-
 <h3 id="1-3-Shortest-method-Code-Golf"><a href="#1-3-Shortest-method-Code-Golf" class="headerlink" title="1.3 Shortest method (Code Golf)"></a>1.3 Shortest method (Code Golf)</h3><p><strong>Thought</strong>:<br>Try to find the difference in the remaining list, and return the index pair. This method can skip the situation that the difference is the same as the item.<br>因为可以假设有且只有一个解，那么可以直接返回<code>nums</code>中元素和<code>target</code>与该元素差值的<code>index</code>。如果报错，<code>pass</code>后寻找下一个元素。<br><strong>Time Complexity</strong>: <code>O(n^2)</code></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">twoSum</span><span class="params">(self, nums: List[int], target: int)</span> -&gt; List[int]:</span></span><br><span class="line">        <span class="comment"># Shortest Method</span></span><br><span class="line">        <span class="keyword">for</span> i,v <span class="keyword">in</span> enumerate(nums):</span><br><span class="line">            <span class="keyword">try</span>: <span class="keyword">return</span> [i, nums.index(target-v,i+<span class="number">1</span>,)]</span><br><span class="line">            <span class="keyword">except</span>: <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
-
-
 <h3 id="1-4-Summary"><a href="#1-4-Summary" class="headerlink" title="1.4 Summary"></a>1.4 Summary</h3><ol>
 <li><code>enumerate(sequence, [start=0])</code>is an iterator in Python, and the time complexity of <code>enumerate(sequence, [start=0])</code> is <code>O(1)</code></li>
-<li>Most of the dictionarty operations is O(1).<table>
-<thead>
-<tr>
-<th align="left">Operation</th>
-<th align="left">Example</th>
-<th align="left">Complexity Class</th>
-<th align="left">In-place or Not</th>
-<th align="left">Notes</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Index</td>
-<td align="left">d[k]</td>
-<td align="left">O(1)</td>
-<td align="left">N/A</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Store</td>
-<td align="left">d[k] = v</td>
-<td align="left">O(1)</td>
-<td align="left">In-place</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Length</td>
-<td align="left">len(d)</td>
-<td align="left">O(1)</td>
-<td align="left">N/A</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Delete</td>
-<td align="left">del d[k]</td>
-<td align="left">O(1)</td>
-<td align="left">In-place</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">get/setdefault</td>
-<td align="left">d.get(k)</td>
-<td align="left">O(1)</td>
-<td align="left">N/A</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Pop</td>
-<td align="left">d.pop(k)</td>
-<td align="left">O(1)</td>
-<td align="left">In-place</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Pop item</td>
-<td align="left">d.popitem()</td>
-<td align="left">O(1)</td>
-<td align="left">In-place</td>
-<td align="left">popped item “randomly” selected</td>
-</tr>
-<tr>
-<td align="left">Clear</td>
-<td align="left">d.clear()</td>
-<td align="left">O(1)</td>
-<td align="left">In-place</td>
-<td align="left">similar to s = {} or = dict()</td>
-</tr>
-<tr>
-<td align="left">View</td>
-<td align="left">d.keys()/d.values()</td>
-<td align="left">O(1)</td>
-<td align="left">N/A</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Construction</td>
-<td align="left">dict(…)</td>
-<td align="left">O(len(…))</td>
-<td align="left">N/A</td>
-<td align="left">depends # (key,value) 2-tuples</td>
-</tr>
-<tr>
-<td align="left">Iteration</td>
-<td align="left">for k in d:</td>
-<td align="left">O(N)</td>
-<td align="left">N/A</td>
-<td align="left">all forms: keys, values, items</td>
-</tr>
-</tbody></table>
-</li>
+<li>Most of the dictionarty operations is O(1).<br>| Operation | Example | Complexity Class | In-place or Not | Notes |<br>| :— | :— | :— | :— | :— |<br>| Index | d[k] | O(1) | N/A | |<br>| Store | d[k] = v | O(1) | In-place | |<br>| Length | len(d) | O(1) | N/A | |<br>| Delete | del d[k] | O(1) | In-place | |<br>| get/setdefault | d.get(k) | O(1) | N/A | |<br>| Pop | d.pop(k) | O(1) | In-place | |<br>| Pop item | d.popitem() | O(1) | In-place | popped item “randomly” selected |<br>| Clear | d.clear() | O(1) | In-place | similar to s = {} or = dict() |<br>| View | d.keys()/d.values() | O(1) | N/A | |<br>| Construction | dict(…) | O(len(…)) | N/A | depends # (key,value) 2-tuples |<br>| Iteration | for k in d: | O(N) | N/A | all forms: keys, values, items |</li>
 </ol>
 <h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h3><ol>
 <li><a href="https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt">https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt</a> </li>

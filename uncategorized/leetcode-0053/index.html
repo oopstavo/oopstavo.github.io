@@ -1,0 +1,53 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Author Name,name@example.com"><title>leetcode-0053·oopstavo</title><meta name="description" content="0053.  (link) DescriptionGiven an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and retu"><meta name="keywords" content="Hexo,HTML,CSS,android,Linux"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/donate.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><script type="text/javascript" src="/js/donate.js"></script><script>var coindesk = "https://blockchain.info/ticker";
+var getJSON = function(url) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+        var status = xhr.status;
+        if (status == 200) {
+            document.getElementById("bprice").innerHTML = xhr.response.CNY.last;
+        } else {
+            document.getElementById("bprice").innerHTML = xhr.response.status;
+        };
+    };
+    xhr.send();
+};
+getJSON(coindesk);
+</script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+    menuSettings: {
+    zoom: "None"
+    },
+    showMathMenu: false,
+    jax: ["input/TeX","output/CommonHTML"],
+    extensions: ["tex2jax.js"],
+    TeX: {
+    extensions: ["AMSmath.js","AMSsymbols.js"],
+    equationNumbers: {
+        autoNumber: "AMS"
+    }
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]]
+    }
+});
+</script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js"></script><meta name="generator" content="Hexo 4.2.1"></head><body><!-- 引入 sidebar.jade--><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><h3 title=""><a href="/">oopstavo</a></h3></div></div><ul class="social-links"><li><a href="http://weibo.com/u/6851063036"><i class="fa fa-weibo"></i></a></li></ul><div style="vertical-align:middle; text-align:center"><img src="/images/home.jpg" height="30%" width="30%"></div><div class="footer"><a target="_blank" href="#">日拱一卒，不期速成</a><br><a class="copyright" href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><a class="copyright" href="#">x</a><a class="copyright" href="https://github.com/Ben02/hexo-theme-Anatole">  Anatole </a><br><p><strong>常去 &nbsp;&nbsp;</strong><a href="https://bbs.byr.cn">北邮人论坛 &nbsp;</a><a href="http://jandan.net/">煎蛋 &nbsp;</a><a href="https://www.reddit.com">Reddit &nbsp;</a><a href="https://github.com">Github &nbsp;</a><a href="https://douban.fm">豆瓣 FM &nbsp;</a><a href="https://readhub.me">Readhub &nbsp;</a><a href="https://www.v2ex.com">V2EX &nbsp;</a></p><p><strong>BTC &nbsp;&nbsp;</strong><a href="https://blockchain.info/zh-cn/wallet">Blockchain Wallet &nbsp;</a><a href="https://btc.com">BTC &nbsp;</a><a href="https://www.okcoin.cn">OKCoin &nbsp;</a></p><P><strong>BLOG &nbsp;&nbsp;</strong><a href="http://www.ruanyifeng.com/blog/">阮一峰 &nbsp;</a></P><P><strong>前端 &nbsp;&nbsp;</strong><a href="http://www.colorhexa.com">ColorHexa &nbsp;</a><a href="https://500px.com">500px &nbsp;</a><a href="https://codepen.io">CodePen &nbsp;</a></P><p><strong>其他 &nbsp;&nbsp;</strong><a href="https://sg.godaddy.com/zh?isc=ISC">GoDaddy &nbsp;</a><a href="https://www.aliyun.com">Aliyun &nbsp;</a></p><p><i class="fa fa-btc">&nbsp;</i><a id="bprice" href="#"> </a>&nbsp;&nbsp;<i class="fa fa-paper-plane">&nbsp;</i><a id="busuanzi_container_site_pv" href="#"><a id="busuanzi_value_site_pv" href="#"> </a></a>&nbsp;&nbsp;<i class="fa fa-paper-plane-o">&nbsp;</i><a id="busuanzi_container_site_uv" href="#"><a id="busuanzi_value_site_uv" href="#"></a></a></p></div></div><div class="main"><!-- 引入 nav.jade--><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">All</a></li><li><a href="/categories/CS/">CS</a></li><li><a href="/categories/Manual/">Manual</a></li><li><a href="/categories/Blockchain/">Blockchain</a></li><li><a href="/categories/Reading/">Reading</a></li><li><a href="/categories/Others/">Others</a></li><li><a href="/About/">About</a></li></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>leetcode-0053</a></h3></div><div class="post-content"><h3 id="0053-link"><a href="#0053-link" class="headerlink" title="0053.  (link)"></a>0053.  (<a href="https://leetcode.com/problems/maximum-subarray/">link</a>)</h3><h4 id=""><a href="#" class="headerlink" title=" "></a><img src="https://img.shields.io/badge/Tag-Array-brightgreen.svg" alt=""> <img src="https://img.shields.io/badge/Difficulty-Easy-brightgreen.svg" alt=""></h4><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.<br>Follow up:<br>If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.</p>
+<h3 id="1-Basic-method"><a href="#1-Basic-method" class="headerlink" title=".1 Basic method"></a>.1 Basic method</h3><p><strong>Thought</strong>:  </p>
+<p><strong>Time Complexity</strong>:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<h3 id="2-Fastest-method"><a href="#2-Fastest-method" class="headerlink" title=".2 Fastest method"></a>.2 Fastest method</h3><p><strong>Thought</strong>: </p>
+<p><strong>Time Complexity</strong>:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<h3 id="27-3-Shortest-method"><a href="#27-3-Shortest-method" class="headerlink" title="27.3 Shortest method"></a>27.3 Shortest method</h3><p><strong>Thought:</strong>  </p>
+<p><strong>Time Complexity</strong>:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<h3 id="27-4-Summary"><a href="#27-4-Summary" class="headerlink" title="27.4 Summary"></a>27.4 Summary</h3><ol>
+<li></li>
+</ol>
+</div><div class="post-footer"><div class="meta"><div class="info"><span class="date">2020-08-07</span></div></div></div></div><div class="post animated fadeInDown"><p style="text-align:center;color:#5F5F5F;">如果文章帮助到您，欢迎打赏</p><p style="text-align:center;color:#5F5F5F;">明天的煎饼就可以加两个蛋咯</p><p style="text-align:center;color:#5F5F5F;">୧(˶‾᷄ ⁻̫ ‾᷅˵)୨</p><div class="donate"><ul class="list" id="donateBox"><li id="BTC"></li><li id="AliPay"></li><li id="WeChat"></li></ul><div id="QRBox"><div id="MainBox"></div></div></div></div><a id="comments"></a><div id="disqus_thread"></div><script>var disqus_shortname = 'oopstavo';
+var disqus_identifier = 'uncategorized/leetcode-0053/';
+var disqus_title = 'leetcode-0053';
+var disqus_url = 'https://oopstavo.com/uncategorized/leetcode-0053/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//#{theme.disqus}.disqus.com/count.js" async></script></div></div></div></div></body></html>

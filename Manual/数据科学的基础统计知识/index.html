@@ -1,7 +1,8 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Author Name,name@example.com"><title>数据科学的基础统计和概率知识·oopstavo</title><meta name="description" content="了解了统计之后，发现统计其实是一种世界观。
 
 
-统计推断和概率论的区别：The basic problem that we study in probability is: Given a data generating process, what are the properities of th"><meta name="keywords" content="Hexo,HTML,CSS,android,Linux"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/donate.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><script type="text/javascript" src="/js/donate.js"></script><script>var coindesk = "https://blockchain.info/ticker";
+统计推断和概率论的区别：
+The basic problem that we study in probability is: Given a data generating process, what are the properities of t"><meta name="keywords" content="Hexo,HTML,CSS,android,Linux"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/donate.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><script type="text/javascript" src="/js/donate.js"></script><script>var coindesk = "https://blockchain.info/ticker";
 var getJSON = function(url) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
@@ -38,32 +39,82 @@ getJSON(coindesk);
 </script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js"></script><meta name="generator" content="Hexo 4.2.1"></head><body><!-- 引入 sidebar.jade--><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><h3 title=""><a href="/">oopstavo</a></h3></div></div><ul class="social-links"><li><a href="http://weibo.com/u/6851063036"><i class="fa fa-weibo"></i></a></li></ul><div style="vertical-align:middle; text-align:center"><img src="/images/home.jpg" height="30%" width="30%"></div><div class="footer"><a target="_blank" href="#">日拱一卒，不期速成</a><br><a class="copyright" href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><a class="copyright" href="#">x</a><a class="copyright" href="https://github.com/Ben02/hexo-theme-Anatole">  Anatole </a><br><p><strong>常去 &nbsp;&nbsp;</strong><a href="https://bbs.byr.cn">北邮人论坛 &nbsp;</a><a href="http://jandan.net/">煎蛋 &nbsp;</a><a href="https://www.reddit.com">Reddit &nbsp;</a><a href="https://github.com">Github &nbsp;</a><a href="https://douban.fm">豆瓣 FM &nbsp;</a><a href="https://readhub.me">Readhub &nbsp;</a><a href="https://www.v2ex.com">V2EX &nbsp;</a></p><p><strong>BTC &nbsp;&nbsp;</strong><a href="https://blockchain.info/zh-cn/wallet">Blockchain Wallet &nbsp;</a><a href="https://btc.com">BTC &nbsp;</a><a href="https://www.okcoin.cn">OKCoin &nbsp;</a></p><P><strong>BLOG &nbsp;&nbsp;</strong><a href="http://www.ruanyifeng.com/blog/">阮一峰 &nbsp;</a></P><P><strong>前端 &nbsp;&nbsp;</strong><a href="http://www.colorhexa.com">ColorHexa &nbsp;</a><a href="https://500px.com">500px &nbsp;</a><a href="https://codepen.io">CodePen &nbsp;</a></P><p><strong>其他 &nbsp;&nbsp;</strong><a href="https://sg.godaddy.com/zh?isc=ISC">GoDaddy &nbsp;</a><a href="https://www.aliyun.com">Aliyun &nbsp;</a></p><p><i class="fa fa-btc">&nbsp;</i><a id="bprice" href="#"> </a>&nbsp;&nbsp;<i class="fa fa-paper-plane">&nbsp;</i><a id="busuanzi_container_site_pv" href="#"><a id="busuanzi_value_site_pv" href="#"> </a></a>&nbsp;&nbsp;<i class="fa fa-paper-plane-o">&nbsp;</i><a id="busuanzi_container_site_uv" href="#"><a id="busuanzi_value_site_uv" href="#"></a></a></p></div></div><div class="main"><!-- 引入 nav.jade--><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">All</a></li><li><a href="/categories/CS/">CS</a></li><li><a href="/categories/Manual/">Manual</a></li><li><a href="/categories/Blockchain/">Blockchain</a></li><li><a href="/categories/Reading/">Reading</a></li><li><a href="/categories/Others/">Others</a></li><li><a href="/About/">About</a></li></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>数据科学的基础统计和概率知识</a></h3></div><div class="post-content"><p>了解了统计之后，发现统计其实是一种世界观。</p>
 <hr>
 <blockquote>
-<p>统计推断和概率论的区别：<br>The basic problem that we study in probability is: Given a data generating process, what are the properities of the outcomes?<br>The basic problem of statistical inference is the inverse of probability: Given the outcomes, what can we say about the process that generated the data?</p>
-</blockquote>
-<p>概率论是统计推断的基础，在给定数据生成过程下观测、研究数据的性质；而统计推断则根据观测的数据，反向思考其数据生成过程。预测、分类、聚类、估计等，都是统计推断的特殊形式，强调对于数据生成过程的研究。</p>
+<h3 id="统计推断和概率论的区别："><a href="#统计推断和概率论的区别：" class="headerlink" title="统计推断和概率论的区别："></a>统计推断和概率论的区别：</h3></blockquote>
+<p>The basic problem that we study in <strong>probability</strong> is: Given a data generating process, what are the properities of the outcomes?<br>The basic problem of <strong>statistical inference</strong> is the inverse of probability: Given the outcomes, what can we say about the process that generated the data?</p>
+<p><strong>概率论</strong>是统计推断的基础，在给定数据生成过程下观测、研究数据的性质；而<strong>统计推断</strong>则根据观测的数据，反向思考其数据生成过程。预测、分类、聚类、估计等，都是统计推断的特殊形式，强调对于数据生成过程的研究。</p>
 <p><img src="https://betterexplained.com/wp-content/uploads/2012/09/probability_vs_stats.png" alt="Difference between sta and prob."></p>
 <blockquote>
-<h3 id="平均数-Mean"><a href="#平均数-Mean" class="headerlink" title="平均数 Mean"></a>平均数 Mean</h3></blockquote>
-<p>平均数没有你想象的那么简单。平均数是一个统计量，是试验后根据实际结果得到的样本的平均值。与之前相对应的，在概率论中的值叫期望。<br><em>* 平均数的意义是，对于数列<code>An</code>，用某一个常数<code>A</code>对数列中的每一项进行替换，形成的新数列结果上与旧数列等效。这个常数<code>A</code>就是数列<code>An</code>的平均数。**<br>常用到的平均数有三种，</em> 算术平均数 <em>，</em> 几何平均数<em>，还有</em>调和平均数*。</p>
-<h4 id="算术平均数"><a href="#算术平均数" class="headerlink" title="算术平均数"></a>算术平均数</h4><p>算术平均数非常简单，就是对一个数列<code>An</code>中的所有项进行求和，然后除以数量。<br>$$\bar{x}=\frac{x_1+x_2+…+x_n}{n}$$<br>算术平均数是最常用的，也是最常用错的一个统计值。<br>算术平均数更少的收到随机因素的影响，但是更容易受到极端值的影响。所以在国际比赛的评分中，要去掉一个最高分，去掉一个最低分，然后再算平均分（裁剪平均值 Truncated mean）。</p>
-<h4 id="几何平均数"><a href="#几何平均数" class="headerlink" title="几何平均数"></a>几何平均数</h4><p>几何平均数就是对数列<code>An</code>中的所有项相乘，然后再开<code>N</code>次方：<br>$$\bar{x}=\sqrt[n]{x_1x_2x_3…x_n}$$<br>几何平均数经常用来算平均增长率。在推荐系统中，其实也可以用来对同类商品进行排名。比如，有两款相机，一款的变焦为<code>200</code>，品质为<code>8</code>；另外一款的变焦为<code>250</code>，品质为<code>6</code>，对这两款相机排名的话，可以用几何平均数。第一款的结果为<code>40</code>，第二款的结果为<code>38.7</code>。</p>
-<h4 id="调和平均数-Harmonic-mean"><a href="#调和平均数-Harmonic-mean" class="headerlink" title="调和平均数 Harmonic mean"></a>调和平均数 Harmonic mean</h4><p>调和平均数又称倒数平均数，是数列<code>An</code>中所有项的倒数的算术平均数的倒数。<br>$$H=\frac{n}{\frac{1}{x_1}+\frac{1}{x_2}+…+\frac{1}{x_n}}$$<br>调和平均数给了小值更大的权重。在数据科学中，F1 Score 的值就是准确率和召回率的调和平均数。</p>
-<p>** * 平均数不等式：算术平均数&gt;几何平均数&gt;调和平均数 * **</p>
+<h3 id="一些常见的统计指标"><a href="#一些常见的统计指标" class="headerlink" title="一些常见的统计指标"></a>一些常见的统计指标</h3></blockquote>
+<h4 id="平均数-Mean"><a href="#平均数-Mean" class="headerlink" title="平均数 Mean"></a>平均数 Mean</h4><p>平均数没有你想象的那么简单。平均数是一个统计学概念，是试验后根据实际结果得到的<strong>样本</strong>的平均值，是先有实验，再有平均数。与之前相对应的，在概率论中的值叫<strong>期望</strong>。<br><strong> 平均数的意义是，对于数列<code>An</code>，用某一个常数<code>A</code>对数列中的每一项进行替换，形成的新数列结果上与旧数列等效。这个常数<code>A</code>就是数列<code>An</code>的平均数。</strong><br>常用到的平均数有三种，<strong><em>算术平均数</em></strong>，<strong><em>几何平均数</em></strong>，还有 <strong><em>调和平均数</em></strong>。</p>
+<ul>
+<li><h4 id="算术平均数-Arithmetic-mean"><a href="#算术平均数-Arithmetic-mean" class="headerlink" title="算术平均数 Arithmetic mean"></a>算术平均数 Arithmetic mean</h4><p>算术平均数非常简单，就是对一个数列<code>An</code>中的所有项进行求和，然后除以数量。</p>
+<script type="math/tex; mode=display">\bar{x}=\frac{x_1+x_2+...+x_n}{n}</script><p>算术平均数是最常用的，也是最常用错的一个统计值。<br>算术平均数更少的收到随机因素的影响，但是更容易受到极端值的影响。所以在国际比赛的评分中，要去掉一个最高分，去掉一个最低分，然后再算平均分（裁剪平均值 Truncated mean）。</p>
+</li>
+<li><h4 id="几何平均数-Geometric-mean"><a href="#几何平均数-Geometric-mean" class="headerlink" title="几何平均数 Geometric mean"></a>几何平均数 Geometric mean</h4><p>几何平均数就是对数列<code>An</code>中的所有项相乘，然后再开<code>N</code>次方：</p>
+<script type="math/tex; mode=display">\bar{x}=\sqrt[n]{x_1x_2x_3...x_n}</script><p>几何平均数经常用来算平均增长率。在<strong>推荐系统</strong>中，其实也可以用来对同类商品进行排名。比如，有两款相机，一款的变焦为<code>200</code>，品质为<code>8</code>；另外一款的变焦为<code>250</code>，品质为<code>6</code>，对这两款相机排名的话，可以用几何平均数。第一款的结果为<code>40</code>，第二款的结果为<code>38.7</code>。</p>
+</li>
+<li><h4 id="调和平均数-Harmonic-mean"><a href="#调和平均数-Harmonic-mean" class="headerlink" title="调和平均数 Harmonic mean"></a>调和平均数 Harmonic mean</h4><p>调和平均数又称倒数平均数，是数列<code>An</code>中所有项的倒数的算术平均数的倒数。</p>
+<script type="math/tex; mode=display">H=\frac{n}{\frac{1}{x_1}+\frac{1}{x_2}+...+\frac{1}{x_n}}</script><p>调和平均数给了小值更大的权重。在数据科学中，<strong>F1 Score</strong> 的值就是准确率和召回率的调和平均数。</p>
+</li>
+<li><h4 id="平均数不等式：算术平均数-gt-几何平均数-gt-调和平均数"><a href="#平均数不等式：算术平均数-gt-几何平均数-gt-调和平均数" class="headerlink" title="平均数不等式：算术平均数 &gt; 几何平均数 &gt; 调和平均数"></a><em>平均数不等式：算术平均数 &gt; 几何平均数 &gt; 调和平均数</em></h4></li>
+</ul>
+<h4 id="期望-Expected-value"><a href="#期望-Expected-value" class="headerlink" title="期望 Expected value"></a>期望 Expected value</h4><p>期望是一种概率论概念，是一个数学特征。期望是实验前根据概率分布预测的样本的平均值，是上帝视角对实验结果的预知，注意是在实验前。<br>实验进行无限多次的平均值会无限接近期望。期望就是平均数随样本趋于无穷的极限。  </p>
+<script type="math/tex; mode=display">E(X) = \sum_{k=1}^{\infty}x_kp_k</script><h4 id="方差-Variance"><a href="#方差-Variance" class="headerlink" title="方差 Variance"></a>方差 Variance</h4><p>方差是用来衡量随机变量或一组数据的离散程度的量。</p>
+<ul>
+<li><p><strong>概率论</strong>中，方差是用来随机变量和数学期望之间的偏离程度。<br>所以在概率论中的方差公式(机器学习中经常见到的一个公式推导)：</p>
+<script type="math/tex; mode=display">Var(X)=E[(X-E(X))^2]=E[X^2-2XE(X)+(E(X))^2]=E(X^2)-2E(X)E(X)+[E(X)]^2=E(X^2)-[E(X)]^2</script></li>
+<li><p>在<strong>统计学</strong>中，方差是各个样本数据和平均数之间的偏离程度。全体方差是一个事实(fact)，样本方差是对事实的一个推测（Estimation)<br>在统计学中的方差公式：</p>
+<ul>
+<li><strong>总体方差</strong>公式：(<script type="math/tex">\mu</script>为总体均值)<script type="math/tex; mode=display">\sigma^2=\frac{\sum_{i=1}^{N}(x_{i}-\mu)^2}{N}</script></li>
+<li><strong>样本方差</strong>公式：(<script type="math/tex">\bar{x}</script>为样本均值)<script type="math/tex; mode=display">S^2=\frac{\sum_{i=1}^{n}(x_{i}-\bar{x})^2}{n-1}</script></li>
+</ul>
+</li>
+</ul>
 <blockquote>
-<h3 id="期望"><a href="#期望" class="headerlink" title="期望"></a>期望</h3></blockquote>
-<p>期望是一种概率论概念。期望是实验前根据概率分布预测的样本的平均值，是上帝视角对实验结果的预知。实验进行无限多次的平均值会无限接近期望。期望就是平均数随样本趋于无穷的极限。<br>$$E(X) = \sum_{k=1}^{\infty}x_kp_k$$</p>
+<h4 id="为什么样本方差的分母需要-1呢？"><a href="#为什么样本方差的分母需要-1呢？" class="headerlink" title="为什么样本方差的分母需要-1呢？"></a>为什么样本方差的分母需要<code>-1</code>呢？</h4><p>为了能够得到更准确的结论，需要在采集样本的时候需要做到样本之间相互独立，即样本之间应该没有任何联系，不能够通过某些样本来推测另一些样本。但是公式中<strong>样本平均值</strong>的引入，使得原本相互独立的样本，变得没有那么独立。因为可以通过平均值，和<code>n-1</code>个样本值，来推测出剩下的一个样本值，从而样本的自由度减少了<code>1</code>，也就是说只有<code>n-1</code>个相互独立的样本。所以分母需要做<code>-1</code>处理。这个处理叫做<strong>贝塞尔校正(Bessel’s Correction)</strong>。<br>所以样本平均值的引入，使得公式存在误差，会使样本方差变得比总体方差小，所以需要平衡。如果不做贝塞尔校正的话，在样本量小的时候，样本方差会比全体方差偏小。在样本量大的时候，偏差逐渐减少，直到可以忽略不计。</p>
+<p><strong><em>贝塞尔校正的推倒： <a href="http://math.oxford.emory.edu/site/math117/besselCorrection/">http://math.oxford.emory.edu/site/math117/besselCorrection/</a></em></strong></p>
+</blockquote>
+<h4 id="标准差-Standard-Deviation"><a href="#标准差-Standard-Deviation" class="headerlink" title="标准差 Standard Deviation"></a>标准差 Standard Deviation</h4><p>标准差是方差的算术平方根。既然有了方差，为什么还要标准差？因为方差的单位是原始数据单位的平方，没办法和原始数据直接比较，开根号后获得标准差，就能很好的了解数据的分布。假设学校男生的平均身高是<code>170cm</code>且呈正态分布，标准差是<code>10cm</code>，那么男生身高分布在<code>[160cm,180cm]</code>的同学就占了<code>68%</code>(正态分布的结论，后面会讲)。</p>
+<ul>
+<li>在<strong>概率论</strong>中：<script type="math/tex; mode=display">\sigma=\sqrt{E[(X-E(X))^2]}=\sqrt{E(X^2)-(E(X))^2}</script></li>
+<li>在<strong>统计学</strong>中的标准差公式：<ul>
+<li><strong>总体标准差</strong>：(<script type="math/tex">\mu</script>为总体均值)<script type="math/tex; mode=display">\sigma=\sqrt{\frac{\sum_{i=1}^{N}(x_{i}-\mu)^2}{N}}</script></li>
+<li><strong>样本标准差</strong>公式：(<script type="math/tex">\bar{x}</script>为样本均值)<script type="math/tex; mode=display">S=\sqrt{\frac{\sum_{i=1}^{n}(x_{i}-\bar{x})^2}{n-1}}</script></li>
+</ul>
+</li>
+</ul>
+<h4 id="协方差-Covariance"><a href="#协方差-Covariance" class="headerlink" title="协方差 Covariance"></a>协方差 Covariance</h4><p>在<strong>概率论</strong>和<strong>统计学</strong>中，协方差表示的是两个变量的总体的误差，是用于衡量两个随机变量的联合变化程度。如果两个变量的变化趋势一致，那么协方差就是正值，不一致就是负值。方差是协方差的一种特殊情况，即变量与自身的协方差。</p>
+<script type="math/tex; mode=display">cov(X,Y)=E((X-E(X))(Y-E(Y)))=E(XY)-E(X)E(Y)</script><script type="math/tex; mode=display">cov(X,Y)=\frac{1}{n}\sum_{i=1}^{n}(x_{i}-\bar{x})(y_{i}-\bar{y})</script><ul>
+<li>样本协方差<script type="math/tex; mode=display">cov(X,Y)=\frac{1}{n-1}\sum_{i=1}^{n}(x_{i}-\bar{x})(y_{i}-\bar{y})</script></li>
+</ul>
+<p>协方差的一些性质：</p>
+<ul>
+<li>两个独立变量的协方差是<code>0</code> (<script type="math/tex">E(XY)=E(X)E(Y)</script>)，协方差是<code>0</code>不代表两个变量是独立的。</li>
+<li><script type="math/tex; mode=display">cov(X,X)=var(X)</script></li>
+<li><script type="math/tex; mode=display">cov(X,Y)=cov(Y,X)</script></li>
+<li><script type="math/tex; mode=display">cov(aX,bY)=ab cov(X,Y)</script></li>
+<li><script type="math/tex; mode=display">cov(X+a,Y+b)=cov(X,Y)</script></li>
+</ul>
+<h4 id="相关系数-皮尔逊积矩相关系数-Pearson-product-moment-correlation-coefficient"><a href="#相关系数-皮尔逊积矩相关系数-Pearson-product-moment-correlation-coefficient" class="headerlink" title="相关系数 (皮尔逊积矩相关系数)(Pearson product-moment correlation coefficient)"></a>相关系数 (皮尔逊积矩相关系数)(Pearson product-moment correlation coefficient)</h4><p>相关系数是表示二者相关性的概念，反映了变量之间的相关关系密切程度的统计指标。相关系数把协方差进行标准化，使得不同数据的相关程度也可以进行比较。</p>
+<script type="math/tex; mode=display">\rho_{xy}=\frac{cov(X,Y)}{\sigma_{X}\sigma_{Y}}</script><ul>
+<li>样本相关系数：<script type="math/tex; mode=display">r_{xy}=\frac{\sum_{i=1}^{n}(x_{i}-\bar{x})(y_{i}-\bar{y})}{\sqrt{\sum_{i=1}^{n}(x_{i}-\bar{x})^2}\sqrt{\sum_{i=1}^{n}(y_{i}-\bar{y})^2}}</script></li>
+</ul>
+<h4 id="百分位数-Percentiles"><a href="#百分位数-Percentiles" class="headerlink" title="百分位数 Percentiles"></a>百分位数 Percentiles</h4><blockquote>
+<h3 id="常见分布"><a href="#常见分布" class="headerlink" title="常见分布"></a>常见分布</h3></blockquote>
+<h4 id="正态分布-Normal-distribution"><a href="#正态分布-Normal-distribution" class="headerlink" title="正态分布 Normal distribution"></a>正态分布 Normal distribution</h4><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/2880px-Normal_Distribution_PDF.svg.png" alt="Normal Distribution"><br>又称作<strong>高斯分布 Gaussian distribution</strong>。记为<code><script type="math/tex">X\sim N(\mu,\sigma^2)</script></code>，平均数/期望为<code><script type="math/tex">\mu</script></code>决定分布的位置，标准差为<code><script type="math/tex">\sigma</script></code>决定分布的幅度。</p>
+<ul>
+<li><strong>标准正态分布</strong>的期望为<code><script type="math/tex">\mu=0</script></code>，标准差为<code><script type="math/tex">\sigma=1</script></code></li>
+<li><strong>正态分布的密度函数</strong>为（概率密度函数的意义是告诉你在哪一区间概率的密度比较大，取值比较多）：<script type="math/tex; mode=display">f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}</script></li>
+<li>如果一组数据具有近似于正态分布的概率分布，则约<code>68.3%</code>的数值分布在距离平均值有<code>1</code>个标准差之内的范围，约<code>95.4%</code>的数值分布在距离平均值有<code>2</code>个标准差之内的范围，以及约<code>99.7%</code>的数值分布在距离平均值<code>3</code>个标准差之内的范围。</li>
+<li><strong>中心极限定理</strong>()</li>
+</ul>
 <blockquote>
-<h3 id="方差和标准差"><a href="#方差和标准差" class="headerlink" title="方差和标准差"></a>方差和标准差</h3></blockquote>
-<h4 id="方差-Variance"><a href="#方差-Variance" class="headerlink" title="方差 Variance"></a>方差 Variance</h4><p>方差是用来衡量随机变量或一组数据的离散程度的量。概率论中，方差是用来随机变量和数学期望之间的偏离程度。在统计学中，方差是各个样本数据和平均数之间的偏离程度。<br>所以在概率论中的方差公式：<br>$$Var(X)=E{\sum[X-E(X)]^2}$$<br>在统计学中的方差公式：<br>总体方差公式：($$\mu$$为总体均值)<br>$$\sigma^2=\frac{\sum(X-\mu)^2}{N}$$<br>样本方差公式：($$\bar{x}$$为样本均值)<br>$$S^2=\frac{\sum(X-\bar{x})^2}{n-1}$$</p>
-<p>为什么样本方差的分母需要<code>-1</code>呢？为了能够得到更准确的结论，需要在采集样本的时候需要做到样本之间相互独立，即样本之间应该没有任何联系，不能够通过某些样本来推测另一些样本。但是公式中样本平均值的引入，使得原本相互独立的样本，变得没有那么独立。因为可以通过平均值，和<code>n-1</code>个样本值，来推测出剩下的一个样本值，从而样本的自由度减少了1，也就是说只有<code>n-1</code>个相互独立的样本。所以分母需要做<code>-1</code>处理。这个处理叫做贝塞尔校正（Bessel’s Correction）。并且样本平均值的引入，使得公式存在误差，会使样本方差变得比总体方差小，所以需要平衡。<br>如果不做贝塞尔校正的话，在样本量小的时候，样本方差会比全体方差偏小。在样本量大的时候，偏差逐渐减少，直到可以忽略不计。</p>
-<p>全体方差是一个事实(fact)，样本方差是对事实的一个推测（Estimation)<br>贝塞尔校正的推倒： <a href="http://math.oxford.emory.edu/site/math117/besselCorrection/">http://math.oxford.emory.edu/site/math117/besselCorrection/</a></p>
-<h4 id="标准差-St"><a href="#标准差-St" class="headerlink" title="标准差 St"></a>标准差 St</h4><blockquote>
 <h3 id="常用公式"><a href="#常用公式" class="headerlink" title="常用公式"></a>常用公式</h3></blockquote>
-<p>条件概率: $$P(B|A)=\frac{P(AB)}{P(A)}$$<br>乘法定则: $$P(A_1A_2…A_n)=P(A_n|A_1A_2…A_{n-1})P(A_{n-1}|A_1A_2…A_{n-2})…P(A_2|A_1)P(A_1)$$</p>
+<p>条件概率: <script type="math/tex">P(B|A)=\frac{P(AB)}{P(A)}</script><br>乘法定则: <script type="math/tex">P(A_1A_2...A_n)=P(A_n|A_1A_2...A_{n-1})P(A_{n-1}|A_1A_2...A_{n-2})...P(A_2|A_1)P(A_1)</script></p>
 <hr>
-<p>贝叶斯公式: $$P(B_i|A)=\frac{P(A|B_i)P(B_i)}{\sum_{j=1}^nP(A|B_j)P(B_j)},i=1,2,…,n$$<br>当 n=2 时, $$P(A)=P(A|B)P(B)+P(A|\bar{B})P(\bar{B})$$</p>
+<p>贝叶斯公式: <script type="math/tex">P(B_i|A)=\frac{P(A|B_i)P(B_i)}{\sum_{j=1}^nP(A|B_j)P(B_j)},i=1,2,...,n</script><br>当 n=2 时, <script type="math/tex">P(A)=P(A|B)P(B)+P(A|\bar{B})P(\bar{B})</script></p>
 <p>test</p>
-</div><div class="post-footer"><div class="meta"><div class="info"><span class="date">2020-06-11</span><a class="tag" href="/categories/Manual/" title="Manual">@Manual </a><a class="tag" href="/tags/cs/" title="cs">#cs </a></div></div></div></div><div class="post animated fadeInDown"><p style="text-align:center;color:#5F5F5F;">如果文章帮助到您，欢迎打赏</p><p style="text-align:center;color:#5F5F5F;">明天的煎饼就可以加两个蛋咯</p><p style="text-align:center;color:#5F5F5F;">୧(˶‾᷄ ⁻̫ ‾᷅˵)୨</p><div class="donate"><ul class="list" id="donateBox"><li id="BTC"></li><li id="AliPay"></li><li id="WeChat"></li></ul><div id="QRBox"><div id="MainBox"></div></div></div></div><a id="comments"></a><div id="disqus_thread"></div><script>var disqus_shortname = 'oopstavo';
+</div><div class="post-footer"><div class="meta"><div class="info"><span class="date">2020-06-11</span><a class="tag" href="/categories/Manual/" title="Manual">@Manual </a><a class="tag" href="/tags/CS/" title="CS">#CS </a></div></div></div></div><div class="post animated fadeInDown"><p style="text-align:center;color:#5F5F5F;">如果文章帮助到您，欢迎打赏</p><p style="text-align:center;color:#5F5F5F;">明天的煎饼就可以加两个蛋咯</p><p style="text-align:center;color:#5F5F5F;">୧(˶‾᷄ ⁻̫ ‾᷅˵)୨</p><div class="donate"><ul class="list" id="donateBox"><li id="BTC"></li><li id="AliPay"></li><li id="WeChat"></li></ul><div id="QRBox"><div id="MainBox"></div></div></div></div><a id="comments"></a><div id="disqus_thread"></div><script>var disqus_shortname = 'oopstavo';
 var disqus_identifier = 'Manual/数据科学的基础统计知识/';
 var disqus_title = '数据科学的基础统计和概率知识';
 var disqus_url = 'https://oopstavo.com/Manual/数据科学的基础统计知识/';
