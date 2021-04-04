@@ -1,10 +1,11 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Author Name,name@example.com"><title>Python 命令快速查看手册·oopstavo</title><meta name="description" content="基础变量命名规则
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Author Name,name@example.com"><title>Python 命令快速查看手册·oopstavo</title><meta name="description" content="基础
+变量命名规则
 变量名可以包括字母、数字和下划线。
 变量名不能以数字开头。
-
+变量名区分大小写。
 
 获取用户输入12&amp;gt;&amp;gt;&amp;gt; x = input('x:')x: 15
-input()和raw_input()的区别：input()会假设用户输入的是合法的 Python 表达式。raw_input()会把"><meta name="keywords" content="Hexo,HTML,CSS,android,Linux"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/donate.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><script type="text/javascript" src="/js/donate.js"></script><script>var coindesk = "https://blockchain.info/ticker";
+input()和raw_input()的区别：input()会假设用户输入的是合法的 Python 表达式。raw"><meta name="keywords" content="Hexo,HTML,CSS,android,Linux"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/donate.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><script type="text/javascript" src="/js/donate.js"></script><script>var coindesk = "https://blockchain.info/ticker";
 var getJSON = function(url) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
@@ -39,29 +40,90 @@ getJSON(coindesk);
     }
 });
 </script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js"></script><meta name="generator" content="Hexo 4.2.1"></head><body><!-- 引入 sidebar.jade--><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><h3 title=""><a href="/">oopstavo</a></h3></div></div><ul class="social-links"><li><a href="http://weibo.com/u/6851063036"><i class="fa fa-weibo"></i></a></li></ul><div style="vertical-align:middle; text-align:center"><img src="/images/home.jpg" height="30%" width="30%"></div><div class="footer"><a target="_blank" href="#">日拱一卒，不期速成</a><br><a class="copyright" href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><a class="copyright" href="#">x</a><a class="copyright" href="https://github.com/Ben02/hexo-theme-Anatole">  Anatole </a><br><p><strong>常去 &nbsp;&nbsp;</strong><a href="https://bbs.byr.cn">北邮人论坛 &nbsp;</a><a href="http://jandan.net/">煎蛋 &nbsp;</a><a href="https://www.reddit.com">Reddit &nbsp;</a><a href="https://github.com">Github &nbsp;</a><a href="https://douban.fm">豆瓣 FM &nbsp;</a><a href="https://readhub.me">Readhub &nbsp;</a><a href="https://www.v2ex.com">V2EX &nbsp;</a></p><p><strong>BTC &nbsp;&nbsp;</strong><a href="https://blockchain.info/zh-cn/wallet">Blockchain Wallet &nbsp;</a><a href="https://btc.com">BTC &nbsp;</a><a href="https://www.okcoin.cn">OKCoin &nbsp;</a></p><P><strong>BLOG &nbsp;&nbsp;</strong><a href="http://www.ruanyifeng.com/blog/">阮一峰 &nbsp;</a></P><P><strong>前端 &nbsp;&nbsp;</strong><a href="http://www.colorhexa.com">ColorHexa &nbsp;</a><a href="https://500px.com">500px &nbsp;</a><a href="https://codepen.io">CodePen &nbsp;</a></P><p><strong>其他 &nbsp;&nbsp;</strong><a href="https://sg.godaddy.com/zh?isc=ISC">GoDaddy &nbsp;</a><a href="https://www.aliyun.com">Aliyun &nbsp;</a></p><p><i class="fa fa-btc">&nbsp;</i><a id="bprice" href="#"> </a>&nbsp;&nbsp;<i class="fa fa-paper-plane">&nbsp;</i><a id="busuanzi_container_site_pv" href="#"><a id="busuanzi_value_site_pv" href="#"> </a></a>&nbsp;&nbsp;<i class="fa fa-paper-plane-o">&nbsp;</i><a id="busuanzi_container_site_uv" href="#"><a id="busuanzi_value_site_uv" href="#"></a></a></p></div></div><div class="main"><!-- 引入 nav.jade--><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">All</a></li><li><a href="/categories/CS/">CS</a></li><li><a href="/categories/Manual/">Manual</a></li><li><a href="/categories/Blockchain/">Blockchain</a></li><li><a href="/categories/Reading/">Reading</a></li><li><a href="/categories/Others/">Others</a></li><li><a href="/About/">About</a></li></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>Python 命令快速查看手册</a></h3></div><div class="post-content"><blockquote>
-<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><h4 id="变量命名规则"><a href="#变量命名规则" class="headerlink" title="变量命名规则"></a>变量命名规则</h4><ol>
-<li>变量名可以包括字母、数字和下划线。</li>
+<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3></blockquote>
+<h4 id="变量命名规则"><a href="#变量命名规则" class="headerlink" title="变量命名规则"></a>变量命名规则</h4><ol>
+<li>变量名可以包括<code>字母</code>、<code>数字</code>和<code>下划线</code>。</li>
 <li>变量名不能以数字开头。</li>
+<li>变量名区分大小写。</li>
 </ol>
-</blockquote>
 <h4 id="获取用户输入"><a href="#获取用户输入" class="headerlink" title="获取用户输入"></a>获取用户输入</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>x = input(<span class="string">'x:'</span>)</span><br><span class="line">x: <span class="number">15</span></span><br></pre></td></tr></table></figure>
 <p><code>input()</code>和<code>raw_input()</code>的区别：<br><code>input()</code>会假设用户输入的是合法的 Python 表达式。<code>raw_input()</code>会把所有的输入当作原始数据，然后将其放到字符串中。<br>在<code>Python3</code>中，<code>raw_input()</code>被重命名为<code>input()</code>.</p>
 <h4 id="注释-或"><a href="#注释-或" class="headerlink" title="注释# 或 ```"></a>注释<code># 或 ```</code></h4><p>单行注释：<code># 右边的一切内容会被忽略</code><br>多行注释：<code><code>多行注释</code></code></p>
 <h4 id="交互式窗口运行"><a href="#交互式窗口运行" class="headerlink" title="交互式窗口运行"></a>交互式窗口运行</h4><p>运行Python程序还没有来得及看结果，程序窗口已经关闭，可以加入以下代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">raw_input(<span class="string">'Press &lt;enter&gt;'</span>)</span><br></pre></td></tr></table></figure></p>
 <blockquote>
-<h3 id="计算"><a href="#计算" class="headerlink" title="计算"></a>计算</h3><h4 id="十六进制"><a href="#十六进制" class="headerlink" title="十六进制"></a>十六进制</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">0xAF</span></span><br><span class="line"><span class="number">175</span></span><br></pre></td></tr></table></figure>
-</blockquote>
-<h4 id="八进制"><a href="#八进制" class="headerlink" title="八进制"></a>八进制</h4><p>Python2 中八进制以<code>0</code>或<code>0o</code>开头，Python3 中八进制仅以<code>0o</code>开头。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">010</span></span><br><span class="line"><span class="number">8</span> <span class="comment"># Python2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">0o10</span></span><br><span class="line"><span class="number">8</span> <span class="comment"># Python3 and Python2</span></span><br></pre></td></tr></table></figure></p>
-<h4 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">0b101</span></span><br><span class="line"><span class="number">5</span></span><br></pre></td></tr></table></figure>
-<h4 id="除法"><a href="#除法" class="headerlink" title="除法 /"></a>除法 <code>/</code></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1</span> / <span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">0</span> <span class="comment"># Python2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">0.5</span> <span class="comment"># Python3</span></span><br></pre></td></tr></table></figure>
-<p>Python2 的处理方法：</p>
-<ol>
-<li>用至少一个实数（包含小数点）来进行运算 <code>&gt;&gt;&gt; 1.0/2.0</code></li>
-<li>在程序前加上<code> from __future__ import division</code></li>
-</ol>
-<h4 id="整除（地板除法）"><a href="#整除（地板除法）" class="headerlink" title="整除（地板除法） //"></a>整除（地板除法） <code>//</code></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1</span> // <span class="number">2</span></span><br><span class="line"><span class="number">0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">-10</span> // <span class="number">3</span> <span class="comment"># 向下取整，因此结果为负数时，为取远离 0 的值</span></span><br><span class="line"><span class="number">-4</span></span><br></pre></td></tr></table></figure>
-<h4 id="取余（模除）"><a href="#取余（模除）" class="headerlink" title="取余（模除） %"></a>取余（模除） <code>%</code></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1</span> % <span class="number">2</span></span><br><span class="line"><span class="number">0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">10</span> % <span class="number">3</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">2.75</span> % <span class="number">0.5</span> <span class="comment"># 小数也可以取余</span></span><br><span class="line"><span class="number">0.25</span> </span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">-10</span> % <span class="number">3</span> <span class="comment"># 因为 -10 // 3 = -4, -10-(-4*3) = 2</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">10</span> % <span class="number">-3</span> <span class="comment"># 因为 10 // -3 = -4, 10-(-4*-3) = -2</span></span><br><span class="line"><span class="number">-2</span></span><br></pre></td></tr></table></figure>
-<h4 id="幂运算（乘方）-pow-x-y-z"><a href="#幂运算（乘方）-pow-x-y-z" class="headerlink" title="幂运算（乘方）**, pow(x,y[,z])"></a>幂运算（乘方）<code>**</code>, <code>pow(x,y[,z])</code></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">2</span> ** <span class="number">3</span></span><br><span class="line"><span class="number">8</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>pow(<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line"><span class="number">8</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>pow(<span class="number">3</span>,<span class="number">3</span>,<span class="number">2</span>)</span><br><span class="line"><span class="number">1</span> <span class="comment"># pow(3,3,2) 相当于 pow(3,3) % 2, 要比直接 pow(3,3) % 2 更快</span></span><br></pre></td></tr></table></figure>
+<h3 id="计算"><a href="#计算" class="headerlink" title="计算"></a>计算</h3></blockquote>
+<h4 id="运算优先级-从上到下优先级递减"><a href="#运算优先级-从上到下优先级递减" class="headerlink" title="运算优先级(从上到下优先级递减)"></a>运算优先级(从上到下优先级递减)</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">操作符</th>
+<th style="text-align:right">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>**</code></td>
+<td style="text-align:right">幂运算</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>～</code> <code>+</code> <code>-</code></td>
+<td style="text-align:right">补，一元加号和减号</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>*</code> <code>/</code> <code>%</code> <code>//</code></td>
+<td style="text-align:right">乘，除，模运算和地板除</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>+</code> <code>-</code></td>
+<td style="text-align:right">加法和减法</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>>&gt;</code> <code>&lt;&lt;</code></td>
+<td style="text-align:right">左，右按位移动</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&amp;</code></td>
+<td style="text-align:right">位元’与’</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>^</td>
+<td style="text-align:right">&lt;/code&gt;</td>
+<td>按位’异或’和常规’或’</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&lt;=</code> <code>&lt;</code> <code>></code> <code>&gt;=</code></td>
+<td style="text-align:right">比较运算符</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&lt;&gt;</code> <code>==</code> <code>!=</code></td>
+<td style="text-align:right">操作符相等比较</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>=</code> <code>%=</code> <code>/=</code> <code>//=</code> <code>-=</code> <code>+=</code> <code>*=</code> <code>**=</code></td>
+<td style="text-align:right">赋值运算符</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is</code> <code>is not</code></td>
+<td style="text-align:right">标识操作符</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>in</code> <code>not in</code></td>
+<td style="text-align:right">成员操作符</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>not</code> <code>or</code> <code>and</code></td>
+<td style="text-align:right">逻辑运算符</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="十六进制-0x"><a href="#十六进制-0x" class="headerlink" title="十六进制 0x+"></a>十六进制 <code>0x+</code></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">0xAF</span></span><br><span class="line"><span class="number">175</span></span><br></pre></td></tr></table></figure>
+<h4 id="八进制-0o"><a href="#八进制-0o" class="headerlink" title="八进制 0o+"></a>八进制 <code>0o+</code></h4><p>Python2 中八进制以<code>0</code>或<code>0o</code>开头，Python3 中八进制仅以<code>0o</code>开头。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">010</span></span><br><span class="line"><span class="number">8</span> <span class="comment"># Python2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">0o10</span></span><br><span class="line"><span class="number">8</span> <span class="comment"># Python3 and Python2</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="二进制-0b"><a href="#二进制-0b" class="headerlink" title="二进制 0b+"></a>二进制 <code>0b+</code></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">0b101</span></span><br><span class="line"><span class="number">5</span></span><br></pre></td></tr></table></figure>
+<h4 id="除法"><a href="#除法" class="headerlink" title="除法 /"></a>除法 <code>/</code></h4><p>除法的运算结果为小数(Float)<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1</span> / <span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">0.5</span> <span class="comment"># Python3</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="整除（地板除法，即向下取整）"><a href="#整除（地板除法，即向下取整）" class="headerlink" title="整除（地板除法，即向下取整） //"></a>整除（地板除法，即向下取整） <code>//</code></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1</span> // <span class="number">2</span></span><br><span class="line"><span class="number">0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">-10</span> // <span class="number">3</span> <span class="comment"># 向下取整，因此结果为负数时，为取远离 0 的值</span></span><br><span class="line"><span class="number">-4</span></span><br></pre></td></tr></table></figure>
+<h4 id="取余（模除）"><a href="#取余（模除）" class="headerlink" title="取余（模除） %"></a>取余（模除） <code>%</code></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1</span> % <span class="number">2</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">10</span> % <span class="number">3</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">2.75</span> % <span class="number">0.5</span> <span class="comment"># 小数也可以取余</span></span><br><span class="line"><span class="number">0.25</span> </span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">-10</span> % <span class="number">3</span> <span class="comment"># 因为 -10 // 3 = -4, -10-(-4*3) = 2</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">10</span> % <span class="number">-3</span> <span class="comment"># 因为 10 // -3 = -4, 10-(-4*-3) = -2</span></span><br><span class="line"><span class="number">-2</span></span><br></pre></td></tr></table></figure>
+<h4 id="幂运算（乘方）-pow-x-y-z"><a href="#幂运算（乘方）-pow-x-y-z" class="headerlink" title="幂运算（乘方）**, pow(x,y[,z])"></a>幂运算（乘方）<code>**</code>, <code>pow(x,y[,z])</code></h4><p>幂运算的优先级比负(-)高，因此在<code>-3**2</code>相当于<code>-(3**2)</code><br><code></code><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">2</span> ** <span class="number">3</span></span><br><span class="line"><span class="number">8</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>pow(<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line"><span class="number">8</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>pow(<span class="number">3</span>,<span class="number">3</span>,<span class="number">2</span>)</span><br><span class="line"><span class="number">1</span> <span class="comment"># pow(3,3,2) 相当于 pow(3,3) % 2, 要比直接 pow(3,3) % 2 更快</span></span><br></pre></td></tr></table></figure></p>
 <h4 id="绝对值-abs-x"><a href="#绝对值-abs-x" class="headerlink" title="绝对值 abs(x)"></a>绝对值 <code>abs(x)</code></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>abs(<span class="number">-10</span>)</span><br><span class="line"><span class="number">10</span></span><br></pre></td></tr></table></figure>
 <h4 id="四舍五入-round-x-n"><a href="#四舍五入-round-x-n" class="headerlink" title="四舍五入 round(x[,n])"></a>四舍五入 <code>round(x[,n])</code></h4><p><div class='tip'>这是 Python 比较坑的一个函数，如果需要精度比较高的计算，这个函数很难 debug 。</div><br>该函数<code>round(x[,n])</code>中有两个参数，第一个是要进行处理的数字，第二个是要处理小数点后多少位，默认为<code>None</code>，即返回一个整数。 该函数的输出结果取决于两个因素： </p>
 <ol>
@@ -69,52 +131,294 @@ getJSON(coindesk);
 <li>你的 Python 版本。</li>
 </ol>
 <p>先解释第一点。因为硬件的原因，浮点数在计算机中是以二进制表示的。但是大部分浮点数都不能精确地表示为二进制小数，<strong>所以在你用浮点数赋值时，精度已经丢失了</strong>。举个例子（Python2 和 Python3 相同），这个例子中<code>3.6</code>是没有被精确存储的：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">4.0</span> - <span class="number">3.6</span></span><br><span class="line"><span class="number">0.3999999999999999</span></span><br></pre></td></tr></table></figure><br>解决精确存储需要用到<code>Decimal</code>模块。<strong>并且注意在赋值时，用的是浮点数的字符串，并不是浮点数本身，因为在你用浮点数本身的时候，精度已经丢失</strong>。（Python2 和 Python3 相同）<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> decimal <span class="keyword">import</span> Decimal</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>Decimal(<span class="string">'4.0'</span>) - Decimal(<span class="string">'3.6'</span>)</span><br><span class="line">Decimal(<span class="string">'0.4'</span>)</span><br></pre></td></tr></table></figure></p>
-<p>再来聊第二点。在 Python2 的<code>round(x[,n])</code>方程说明中，该方程的描述就是我们所理解的四舍五入规则：<a href="https://docs.python.org/2.7/library/functions.html#round">官方描述：round()</a><br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">The <span class="built_in">result</span> is <span class="keyword">a</span> floating point <span class="built_in">number</span>. Values are rounded <span class="built_in">to</span> <span class="keyword">the</span> closest multiple <span class="keyword">of</span> <span class="number">10</span> <span class="built_in">to</span> <span class="keyword">the</span> power minus ndigits; </span><br><span class="line"><span class="keyword">if</span> <span class="literal">two</span> multiples are equally <span class="built_in">close</span>, rounding is done away <span class="built_in">from</span> <span class="number">0</span></span><br><span class="line">结果会返回一个浮点数。结果会被约到离它最近的 <span class="number">10</span> 的 -n 次方。</span><br><span class="line">如果它和两个值距离相等，会被约到远离 <span class="number">0</span> 的那个数。</span><br></pre></td></tr></table></figure><br>举个栗子<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">0.5</span>)</span><br><span class="line"><span class="number">1.0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">0.125</span>, <span class="number">2</span>) <span class="comment"># 0.125可以精确存储</span></span><br><span class="line"><span class="number">0.13</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">0.375</span>, <span class="number">2</span>) <span class="comment"># 0.375可以精确存储</span></span><br><span class="line"><span class="number">0.38</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">2.675</span>, <span class="number">2</span>) <span class="comment"># 因为2.675没办法精确存储</span></span><br><span class="line"><span class="number">2.67</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> decimal <span class="keyword">import</span> Decimal</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(Decimal(<span class="string">'2.675'</span>),<span class="number">2</span>) <span class="comment"># 这种写法也是不对的，因为round函数的输入需要是浮点数，Decimal还是会转换成不精确的浮点数来作为输入</span></span><br><span class="line"><span class="number">2.67</span></span><br></pre></td></tr></table></figure><br>在 Python3 中，<code>round(x[,n])</code>变了，规则变成“四舍六入五平分”，也就是说如果末位是 5 的话，如果前一位是偶数则舍弃，如果是奇数则向前进一。再看一下官方说明：<a href="https://docs.python.org/3.8/library/functions.html#round">官方描述：round()</a><br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">For <span class="keyword">the</span> built-<span class="keyword">in</span> types supporting <span class="built_in">round</span>(), values are rounded <span class="built_in">to</span> <span class="keyword">the</span> closest multiple <span class="keyword">of</span> <span class="number">10</span> <span class="built_in">to</span> <span class="keyword">the</span> power minus ndigits; </span><br><span class="line"><span class="keyword">if</span> <span class="literal">two</span> multiples are equally <span class="built_in">close</span>, rounding is done toward <span class="keyword">the</span> even choice (so, <span class="keyword">for</span> example, </span><br><span class="line">both <span class="built_in">round</span>(<span class="number">0.5</span>) <span class="keyword">and</span> <span class="built_in">round</span>(<span class="number">-0.5</span>) are <span class="number">0</span>, <span class="keyword">and</span> <span class="built_in">round</span>(<span class="number">1.5</span>) is <span class="number">2</span>).</span><br><span class="line">这个函数也是会返回一个离它最近的 <span class="number">10</span> 的 -n 次方。</span><br><span class="line">但是当它和两个数字距离相同时，会被约到最近的偶数。</span><br></pre></td></tr></table></figure><br>再举个栗子<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">0.5</span>)</span><br><span class="line"><span class="number">0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">0.125</span>, <span class="number">2</span>) <span class="comment"># 0.125可以精确存储</span></span><br><span class="line"><span class="number">0.12</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">0.375</span>, <span class="number">2</span>) <span class="comment"># 0.375可以精确存储</span></span><br><span class="line"><span class="number">0.38</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">2.675</span>, <span class="number">2</span>) <span class="comment"># 同样因为2.675没办法精确存储</span></span><br><span class="line"><span class="number">2.67</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> decimal <span class="keyword">import</span> Decimal</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(Decimal(<span class="string">'2.675'</span>),<span class="number">2</span>) <span class="comment"># 这次就是对的，因为 Python3 中round貌似可以接受Decimal，返回也是Decimal</span></span><br><span class="line">Decimal(<span class="string">'2.68'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>再来聊第二点。在 Python2 的<code>round(x[,n])</code>方程说明中，该方程的描述就是我们所理解的四舍五入规则：<a href="https://docs.python.org/2.7/library/functions.html#round">官方描述：round()</a><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">The result is a floating point number. Values are rounded to the closest multiple of 10 to the power minus ndigits; </span><br><span class="line">if two multiples are equally close, rounding is done away from 0</span><br><span class="line">结果会返回一个浮点数。结果会被约到离它最近的 10 的 -n 次方。</span><br><span class="line">如果它和两个值距离相等，会被约到远离 0 的那个数。</span><br></pre></td></tr></table></figure><br>举个栗子<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">0.5</span>)</span><br><span class="line"><span class="number">1.0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">0.125</span>, <span class="number">2</span>) <span class="comment"># 0.125可以精确存储</span></span><br><span class="line"><span class="number">0.13</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">0.375</span>, <span class="number">2</span>) <span class="comment"># 0.375可以精确存储</span></span><br><span class="line"><span class="number">0.38</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">2.675</span>, <span class="number">2</span>) <span class="comment"># 因为2.675没办法精确存储</span></span><br><span class="line"><span class="number">2.67</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> decimal <span class="keyword">import</span> Decimal</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(Decimal(<span class="string">'2.675'</span>),<span class="number">2</span>) <span class="comment"># 这种写法也是不对的，因为round函数的输入需要是浮点数，Decimal还是会转换成不精确的浮点数来作为输入</span></span><br><span class="line"><span class="number">2.67</span></span><br></pre></td></tr></table></figure><br>在 Python3 中，<code>round(x[,n])</code>变了，规则变成“四舍六入五平分”，也就是说如果末位是 5 的话，如果前一位是偶数则舍弃，如果是奇数则向前进一。再看一下官方说明：<a href="https://docs.python.org/3.8/library/functions.html#round">官方描述：round()</a><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">For the built-in types supporting round(), values are rounded to the closest multiple of 10 to the power minus ndigits; </span><br><span class="line">if two multiples are equally close, rounding is done toward the even choice (so, for example, </span><br><span class="line">both round(0.5) and round(-0.5) are 0, and round(1.5) is 2).</span><br><span class="line">这个函数也是会返回一个离它最近的 10 的 -n 次方。</span><br><span class="line">但是当它和两个数字距离相同时，会被约到最近的偶数。</span><br></pre></td></tr></table></figure><br>再举个栗子<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">0.5</span>)</span><br><span class="line"><span class="number">0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">0.125</span>, <span class="number">2</span>) <span class="comment"># 0.125可以精确存储</span></span><br><span class="line"><span class="number">0.12</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">0.375</span>, <span class="number">2</span>) <span class="comment"># 0.375可以精确存储</span></span><br><span class="line"><span class="number">0.38</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">2.675</span>, <span class="number">2</span>) <span class="comment"># 同样因为2.675没办法精确存储</span></span><br><span class="line"><span class="number">2.67</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> decimal <span class="keyword">import</span> Decimal</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(Decimal(<span class="string">'2.675'</span>),<span class="number">2</span>) <span class="comment"># 这次就是对的，因为 Python3 中round貌似可以接受Decimal，返回也是Decimal</span></span><br><span class="line">Decimal(<span class="string">'2.68'</span>)</span><br></pre></td></tr></table></figure></p>
 <p>所以在 Python2 和 Python3 中正确的四舍五入写法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> decimal <span class="keyword">import</span> Decimal, ROUND_HALF_UP</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>Decimal(<span class="string">'2.675'</span>).quantize(Decimal(<span class="string">'0.00'</span>), rounding=ROUND_HALF_UP)</span><br><span class="line">Decimal(<span class="string">'2.68'</span>)</span><br></pre></td></tr></table></figure></p>
 <h4 id="向上-向下取整math-ceil-x-math-floor-x"><a href="#向上-向下取整math-ceil-x-math-floor-x" class="headerlink" title="向上/向下取整math.ceil(x)/math.floor(x)"></a>向上/向下取整<code>math.ceil(x)/math.floor(x)</code></h4><p>该方程Python2和Python3的唯一区别是返回值的类型，举个栗子：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> math</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>math.ceil(<span class="number">3.67</span>)</span><br><span class="line"><span class="number">4</span> <span class="comment"># Python3</span></span><br><span class="line"><span class="number">4.0</span> <span class="comment"># Python2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>math.floor(<span class="number">3.67</span>)</span><br><span class="line"><span class="number">3</span> <span class="comment"># Python3</span></span><br><span class="line"><span class="number">3.0</span> <span class="comment"># Python2</span></span><br></pre></td></tr></table></figure></p>
 <h4 id="开方math-sqrt-x-cmath-sqrt"><a href="#开方math-sqrt-x-cmath-sqrt" class="headerlink" title="开方math.sqrt(x)/cmath.sqrt()"></a>开方<code>math.sqrt(x)/cmath.sqrt()</code></h4><p>复数的开放用<code>cmath.sqrt(x)</code>，虚数单位用<code>j</code>来表示。Python2和Python3没有区别。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> math. cmath</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>math.sqrt(<span class="number">4</span>)</span><br><span class="line"><span class="number">2.0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>math.sqrt(<span class="number">4.0</span>)</span><br><span class="line"><span class="number">2.0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>cmath.sqrt(<span class="number">-4</span>)</span><br><span class="line"><span class="number">2j</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>cmath.sqrt(<span class="number">-4.0</span>)</span><br><span class="line"><span class="number">2j</span></span><br></pre></td></tr></table></figure></p>
 <blockquote>
-<h3 id="序列"><a href="#序列" class="headerlink" title="序列"></a>序列</h3><p>Python 中包含 6 种内建的序列：list, tuple, string, Unicode string, buffer object, xrange object.</p>
-</blockquote>
-<h4 id="通用序列操作"><a href="#通用序列操作" class="headerlink" title="通用序列操作"></a>通用序列操作</h4><p><strong>索引：</strong>索引是从<code>0</code>开始的，<code>-1</code>是序列的最后一个元素。<br><strong>分片：</strong></p>
+<h3 id="序列"><a href="#序列" class="headerlink" title="序列"></a>序列</h3><p>Python支持一种数据结构的基本概念，叫<strong>容器(<code>Container</code>)</strong>，两种主要的容器是<strong>序列</strong>(如<code>list</code>和<code>tuple</code>)和<strong>映射</strong>(如<code>dict</code>)。 </p>
 <ul>
-<li>分片是通过冒号隔开的两个索引来实现。  </li>
-<li>第一个索引是要提取的第一个元素的编号，最后一个索引是分片之后剩余部分的第一个元素的编号。所以，第一个索引的元素是包含在分片内的，而第二个，则不包含在分片内。  </li>
-<li>分片中，如果最左边的索引比它最右边的晚出现在序列中，那结果就是一个空的序列。  </li>
-<li>分片的步长默认为<code>1</code>，也可以是负数，但是不能为<code>0</code>。正步长，Python 会从序列的头部开始向右提取元素，直到最后一个元素。负步长，会从尾部开始向左提取元素，直到第一个元素。   </li>
+<li>在序列中，每个元素都有编号.</li>
+<li>在映射中，每个元素都有名称(如键)。</li>
+<li>有一种既不是序列也不是映射的容器，叫做<strong>集合(<code>set</code>)</strong>.</li>
 </ul>
-<p><strong>成员资格：</strong>可以用<code>in</code>运算符，返回<code>True</code> or <code>False</code><br><strong>长度/最大/最小值：</strong> <code>len()</code>, <code>max()</code>, <code>min()</code></p>
+<p>序列包括两大类：  </p>
+<ol>
+<li>不可变序列类:<ul>
+<li><code>tuple</code></li>
+<li><code>range object</code></li>
+<li><code>text string</code></li>
+<li><code>byte</code></li>
+</ul>
+</li>
+<li>可变序列类型:<ul>
+<li><code>list</code></li>
+<li><code>bytearray</code></li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<h4 id="通用序列操作"><a href="#通用序列操作" class="headerlink" title="通用序列操作"></a>通用序列操作</h4><p><strong>索引：</strong>索引是从<code>0</code>开始的，<code>-1</code>是序列的最后一个元素。<br><strong>切片：</strong></p>
+<ul>
+<li>切片是通过冒号隔开的两个索引来实现。  </li>
+<li>第一个索引是要提取的第一个元素的编号，最后一个索引是分片之后剩余部分的第一个元素的编号。所以，第一个索引的元素是包含在分片内的，而第二个，则不包含在分片内。  </li>
+<li>分片中，如果最左边的索引比它最右边的晚出现在序列中，那结果就是一个空的序列。</li>
+<li>切片始于开头，则第一个索引可以省略。终于结尾则第二个索引可以省略。</li>
+<li>复制整个序列<code>list[:]</code></li>
+<li>分片的步长默认为<code>1</code>，也可以是负数，但是不能为<code>0</code>。正步长，Python 会从序列的头部开始向右提取元素，直到最后一个元素。负步长，会从尾部开始向左提取元素，直到第一个元素。   </li>
+<li>书27页有遗留问题</li>
+</ul>
+<p><strong>序列相加/相乘</strong>：相同类型序列相加，即序列拼接。不同类型序列不能相加。序列可以和数字x相乘，将重复这个序列x次来创建一个新的序列。<br><strong>成员资格：</strong>可以用<code>in</code>运算符，返回<code>True</code> or <code>False</code><br><strong>长度/最大/最小值：</strong> <code>len()</code>, <code>max()</code>, <code>min()</code></p>
 <p><strong><code>zip</code>函数：</strong>该函数可以将两个序列像拉链一样，拉在一起，然后返回一个元组的列表。<code>zip</code>函数可以用作用于任意多的序列，并且可以处理不等长的序列，当最短的序列用完的时候停止。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = [<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>zip(a,b)</span><br><span class="line">[(<span class="number">1</span>,<span class="string">'a'</span>),(<span class="number">2</span>,<span class="string">'b'</span>),(<span class="number">3</span>,<span class="string">'c'</span>)]</span><br></pre></td></tr></table></figure>
 <p><strong><code>enumerate</code>函数：</strong>该函数可以在需要索引的时候提供序列的索引。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> index, value <span class="keyword">in</span> a: print(index, value)</span><br><span class="line"><span class="number">0</span> a</span><br><span class="line"><span class="number">1</span> b</span><br><span class="line"><span class="number">2</span> c</span><br></pre></td></tr></table></figure></p>
 <p><strong><code>sorted</code>函数：</strong>该函数返回一个排好序的序列，并不修改原序列，而是返回一个排好序的版本。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>sort([<span class="number">3</span>,<span class="number">4</span>,<span class="number">1</span>,<span class="number">2</span>])</span><br><span class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br></pre></td></tr></table></figure><br><strong><code>reversed</code>函数：</strong>该函数返回一个翻转的可迭代对象。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>list(reversed([<span class="number">3</span>,<span class="number">4</span>,<span class="number">1</span>,<span class="number">2</span>]))</span><br><span class="line">[<span class="number">2</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">3</span>]</span><br></pre></td></tr></table></figure></p>
 <blockquote>
-<h3 id="列表-list"><a href="#列表-list" class="headerlink" title="列表 list"></a>列表 list</h3><h4 id="删除元素-del"><a href="#删除元素-del" class="headerlink" title="删除元素 del"></a>删除元素 del</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>l = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">del</span> l[<span class="number">2</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>l</span><br><span class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">4</span>]</span><br></pre></td></tr></table></figure>
-<h4 id="分片赋值"><a href="#分片赋值" class="headerlink" title="分片赋值"></a>分片赋值</h4><p>分片复制非常强大，能实现删除，插入等一些列操作。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a[<span class="number">3</span>:] = [<span class="number">7</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">7</span>]</span><br></pre></td></tr></table></figure><br>分片赋值实现插入：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a[<span class="number">1</span>:<span class="number">1</span>] = [<span class="number">1.1</span>,<span class="number">1.2</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="number">1</span>,<span class="number">1.1</span>,<span class="number">1.2</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br></pre></td></tr></table></figure><br>分片复制实现删除：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a[<span class="number">1</span>:<span class="number">4</span>] = []</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="number">1</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br></pre></td></tr></table></figure></p>
-<h4 id="列表方法"><a href="#列表方法" class="headerlink" title="列表方法"></a>列表方法</h4><p><code>list.append(x)</code><br>在列表的末尾追加新的对象，不返回值，直接修改原来的列表。</p>
-</blockquote>
-<p><code>list.count(x)</code><br>统计某个元素在列表中出现的次数。</p>
-<p><code>list.extend(iterable)</code><br>在列表的末尾一次性追加另一个序列的多个值，是修改原有序列，并不是生成一个新的序列。</p>
-<p><code>list.index(x[, start[, end]])</code><br>用于从列表中找出某个值第一个匹配项的索引位置。可选参数规定了 list 的寻找范围。但返回值仍是从整个 list 开始算起。</p>
-<p><code>list.insert(i,x)</code><br>将对象插入列表中。</p>
-<p><code>list.pop([i])</code><br>移除列表中的一个元素，默认是最后一个元素，并且返回该元素的值。</p>
-<p><code>list.remove(x)</code><br>移除列表中某个值的第一个匹配项，修改了原有列表，但并不返回值。</p>
-<p><code>list.reverse()</code><br>将列表中的元素反向存放，改变了列表，但是并不返回值。如果需要一个反向迭代，可以使用<code>reversed</code>函数，该函数返回一个反向迭代器。</p>
-<p><code>list.sort(key=None, reverse=False)</code><br>该函数用于在原位置对列表进行排序，改变原有序列，但并不返回值。如果想要获得副本可以使用<code>sorted()</code>函数。key 参数可以规定比较的函数，比如长度<code>len</code>.</p>
+<h3 id="列表-list"><a href="#列表-list" class="headerlink" title="列表 list"></a>列表 list</h3></blockquote>
+<p><strong>序列转换List:</strong>list(sequence)<br><strong>list转换字符串:</strong>‘’.join(somelist)</p>
+<h4 id="删除元素-del"><a href="#删除元素-del" class="headerlink" title="删除元素 del"></a>删除元素 del</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>l = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">del</span> l[<span class="number">2</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>l</span><br><span class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">4</span>]</span><br></pre></td></tr></table></figure>
+<h4 id="分片赋值"><a href="#分片赋值" class="headerlink" title="分片赋值"></a>分片赋值</h4><p>分片复制非常强大，能实现删除，插入等一些列操作。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a[<span class="number">3</span>:] = [<span class="number">7</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">7</span>]</span><br></pre></td></tr></table></figure><br>分片赋值实现插入：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a[<span class="number">1</span>:<span class="number">1</span>] = [<span class="number">1.1</span>,<span class="number">1.2</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="number">1</span>,<span class="number">1.1</span>,<span class="number">1.2</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br></pre></td></tr></table></figure><br>分片复制实现删除：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a[<span class="number">1</span>:<span class="number">4</span>] = []</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="number">1</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br></pre></td></tr></table></figure><br>分片操作的步长也可以不为1，这时候赋值需要和对应元素数量相等的list。</p>
+<h4 id="列表方法"><a href="#列表方法" class="headerlink" title="列表方法"></a>列表方法</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">方法名</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">返回值</th>
+<th style="text-align:left">就地操作</th>
+<th style="text-align:left">时间复杂度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>list[i]</code></td>
+<td style="text-align:left">获取值</td>
+<td style="text-align:left">返回该<code>index</code>上的值</td>
+<td style="text-align:left">None</td>
+<td style="text-align:left"><code>O(1)</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>list[i] = x</code></td>
+<td style="text-align:left">赋值</td>
+<td style="text-align:left"><code>None</code></td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left"><code>O(1)</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>len(list)</code></td>
+<td style="text-align:left">获取<code>list</code>的长度</td>
+<td style="text-align:left">返回该<code>list</code>的长度</td>
+<td style="text-align:left">None</td>
+<td style="text-align:left"><code>O(1)</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>list1 ==/!= list2</code></td>
+<td style="text-align:left">两个<code>list</code>对比</td>
+<td style="text-align:left"><code>Boolean</code></td>
+<td style="text-align:left">None</td>
+<td style="text-align:left"><code>O(n)</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>x in list</code></td>
+<td style="text-align:left">查看某个元素是否在这个list</td>
+<td style="text-align:left"><code>Boolean</code></td>
+<td style="text-align:left">None</td>
+<td style="text-align:left"><code>O(n)</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>list.copy()</code></td>
+<td style="text-align:left">复制这个<code>list</code>，不是关联reference。</td>
+<td style="text-align:left">返回一个相同的<code>list</code></td>
+<td style="text-align:left">None</td>
+<td style="text-align:left"><code>O(n)</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>min(list)/max(list)</code></td>
+<td style="text-align:left">获取极值</td>
+<td style="text-align:left">返回该<code>list</code>的极值</td>
+<td style="text-align:left">None</td>
+<td style="text-align:left"><code>O(n)</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>list*k</code></td>
+<td style="text-align:left"><code>list</code>中元素复制</td>
+<td style="text-align:left">返回新的<code>list</code></td>
+<td style="text-align:left">No</td>
+<td style="text-align:left"><code>O(n*k)</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>list.clear()</code></td>
+<td style="text-align:left">清空列表内容，类似于<code>lst[:] = []</code></td>
+<td style="text-align:left"><code>None</code></td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left"><code>O(1)</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>list.append(x)</code></td>
+<td style="text-align:left">在列表的末尾追加新的对象</td>
+<td style="text-align:left"><code>None</code></td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left"><code>O(1)</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>list.count(x)</code></td>
+<td style="text-align:left">统计某个元素在列表中出现的次数</td>
+<td style="text-align:left"><code>Int</code></td>
+<td style="text-align:left">None</td>
+<td style="text-align:left"><code>O(n)</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>list.extend(iterable)</code></td>
+<td style="text-align:left">在列表的末尾一次性追加另一个序列的多个值</td>
+<td style="text-align:left">None</td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left"><code>O(k)</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>list.index(x[, start[, end]])</code></td>
+<td style="text-align:left">用于从列表中找出某个值第一个匹配项的索引位置</td>
+<td style="text-align:left">该值的第一个匹配项的索引</td>
+<td style="text-align:left">None</td>
+<td style="text-align:left"><code>O(n)</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>list.insert(i,x)</code></td>
+<td style="text-align:left">将对象插入列表中</td>
+<td style="text-align:left">None</td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left"><code>O(n)</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>list.pop([i])</code></td>
+<td style="text-align:left">移除列表中的一个元素，默认是最后一个元素，可选参数为被移除的值的索引</td>
+<td style="text-align:left">被移除的值</td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left">移除最后一个值：<code>O(1)</code>，其他：<code>O(n)</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>list.remove(x)</code></td>
+<td style="text-align:left">移除列表中某个值的第一个匹配项</td>
+<td style="text-align:left"><code>None</code></td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left"><code>O(n)</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>list.reverse()</code></td>
+<td style="text-align:left">将列表中的元素反向存放</td>
+<td style="text-align:left"><code>None</code></td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left"><code>O(n)</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>list.sort(key=None, reverse=False)</code></td>
+<td style="text-align:left">该函数用于在原位置对列表进行排序，<code>key</code> 参数可以规定比较的函数</td>
+<td style="text-align:left"><code>None</code></td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left"><code>O(nlogn)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><code>reversed()</code>函数可以返回一个相反顺序的迭代器。</li>
+<li><code>list.sort()</code>函数是就地排序，不返回值。如果想要得到一个排好序的副本，可以使用<code>sorted()</code>函数，会返回一个排好序的副本，并切原来的list保持不变。</li>
+</ul>
 <h4 id="列表推倒式（轻量级循环）"><a href="#列表推倒式（轻量级循环）" class="headerlink" title="列表推倒式（轻量级循环）"></a>列表推倒式（轻量级循环）</h4><p>该方法式利用其他列表创建新列表的一种方法，工作方式类似于<code>for</code>，并且也可以加入一个<code>if</code>语句添加到列表中，也可以增加更多的<code>for</code>语句。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>[x*y <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">4</span>) <span class="keyword">for</span> y <span class="keyword">in</span> range(<span class="number">3</span>) <span class="keyword">if</span> x * y % <span class="number">2</span> == <span class="number">0</span>]</span><br><span class="line">[<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">2</span>, <span class="number">0</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">0</span>, <span class="number">6</span>]</span><br></pre></td></tr></table></figure>
 <blockquote>
 <h3 id="元组-tuple"><a href="#元组-tuple" class="headerlink" title="元组 tuple"></a>元组 tuple</h3></blockquote>
 <p>元组不能修改。创建元组的方法非常简单，用逗号分隔一些值，就会自动创建元组。元组除了创建和访问之外，没有其他过多的操作。所以元组一般用来做映射中的键值，或者作为内建函数和方法的返回值存在。</p>
 <blockquote>
-<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>字符串和元组一样都是不可变的。</p>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>字符串和元组一样都是不可变序列。</p>
 </blockquote>
-<h4 id="字符串常量"><a href="#字符串常量" class="headerlink" title="字符串常量"></a>字符串常量</h4><p><code>string.digits</code><br>包含数字0-9的字符串<br><code>string.letters</code>，在<code>Python3</code>中是<code>string.ascii_letters</code><br>包含所有大小写字母的字符串<br><code>string.lowercase</code>，在<code>Python3</code>中是<code>string.ascii_lowercase</code><br>包含所有小写字母的字符串<br><code>string.printable</code><br>包含所有可打印字符的字符串<br><code>string.punctuation</code><br>包含所有标点的字符串<br><code>string.uppercase</code>，在<code>Python3</code>中是<code>string.ascii_uppercase</code><br>包含所有大写字母的字符串</p>
-<h4 id="值被转换成字符串的两种机制"><a href="#值被转换成字符串的两种机制" class="headerlink" title="值被转换成字符串的两种机制"></a>值被转换成字符串的两种机制</h4><p>str：会把值转换成合理形式的字符串<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(str(<span class="string">"hello"</span>))</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>hello</span><br></pre></td></tr></table></figure></p>
-<p>repr：会创建一个字符串，以合法的 Python 表达形式来表示值。在 Python2 中，<code>repr()</code> 也可以写成<code><code> </code></code><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(repr(<span class="string">"hello"</span>))</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'hello'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span>`<span class="number">42</span>` <span class="comment"># Python2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">42</span></span><br></pre></td></tr></table></figure></p>
-<h4 id="长字符串"><a href="#长字符串" class="headerlink" title="长字符串"></a>长字符串</h4><p>可以用三个引号代替普通引号，在三个引号内部可以同时使用单引号和双引号，而不需要使用反斜线进行转义。<br>普通字符串进行换行，可以在一行之中的最后一个字符加一个反斜线，这样换行符本身就被转义了。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">"hello \</span></span><br><span class="line"><span class="string">world"</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>hello world</span><br></pre></td></tr></table></figure></p>
-<h4 id="原始字符串"><a href="#原始字符串" class="headerlink" title="原始字符串"></a>原始字符串</h4><p>原始字符串以<code>r</code>开头，原始字符串不会把反斜线当作特殊字符，在原始字符串中的输入，每个字符都会和书写方式一致。原始字符串的最后一个字符不能是反斜线，如果最后一个字符是反斜线， Python 会不清楚是否应该结束字符串。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">r'C:\nowhere'</span>)</span><br><span class="line"><span class="string">'C:\nowhere'</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="字符串常量"><a href="#字符串常量" class="headerlink" title="字符串常量"></a>字符串常量</h4><p><code>string.digits</code><br>包含数字0-9的字符串<br><code>string.ascii_letters</code><br>包含所有大小写字母的字符串<br><code>string.ascii_lowercase</code><br>包含所有小写字母的字符串<br><code>string.ascii_uppercase</code><br>包含所有大写字母的字符串<br><code>string.printable</code><br>包含所有可打印字符的字符串<br><code>string.punctuation</code><br>包含所有标点的字符串</p>
+<h4 id="值被转换成字符串的两种机制"><a href="#值被转换成字符串的两种机制" class="headerlink" title="值被转换成字符串的两种机制"></a>值被转换成字符串的两种机制</h4><p>有<code>str()</code>，<code>repr()</code>两种形式，两个函数分别是调用对象的<code>__str__</code><code>__repr__</code>方法来输出结果。<br><a href="https://stackoverflow.com/questions/1436703/difference-between-str-and-repr">Stackoverflow</a>上有一个回答总结得非常好：</p>
+<ol>
+<li><code>str() / __str__</code>的目的是可读性(readable)，便于理解，适合终端用户。</li>
+<li><code>repr() / __repr__</code>的目的是准确性(unambiguous)，要准确的展示内容和数据类型，适合调试和开发。</li>
+</ol>
+<p><code>str()</code>：会把值转换成合理形式的字符串，展示出来<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(str(<span class="string">"hello"</span>))</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>hello</span><br></pre></td></tr></table></figure></p>
+<p><code>repr()</code>：会创建一个字符串，以合法的 Python 表达形式来表示值。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(repr(<span class="string">"hello"</span>))</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'hello'</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="长字符串"><a href="#长字符串" class="headerlink" title="长字符串"></a>长字符串</h4><p>普通字符串进行换行，可以在一行之中的最后一个字符加一个反斜线，这样换行符本身就被转义了，达到字符串换行效果。<br>也可以用三个引号代替普通引号，在三个引号内部可以同时使用单引号和双引号，而不需要使用反斜线进行转义。常被用作长字符串。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">"hello \</span></span><br><span class="line"><span class="string">world"</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>hello world</span><br></pre></td></tr></table></figure>
+<h4 id="原始字符串"><a href="#原始字符串" class="headerlink" title="原始字符串"></a>原始字符串</h4><p>原始字符串以<code>r</code>开头，会把字符串内的所有字符原样打印，唯一的例外是引号<code>“ ‘</code>，需要加入反斜线来进行转义，但是最后打印出来仍然会包含这条转义的反斜线。<br>原始字符串的最后一个字符不能是反斜线，如果最后一个字符是反斜线， Python 会不清楚是否应该结束字符串。可以两种字符串拼接来达到最后一个字符是反斜线的效果。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">r'C:\nowhere'</span>)</span><br><span class="line"><span class="string">'C:\nowhere'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">r'C:\Program\foo\bar'</span> <span class="string">'\\'</span>)</span><br><span class="line">C:\Program\foo\bar\</span><br></pre></td></tr></table></figure></p>
 <h4 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h4><p>使用反斜线对字符串重的符号进行转义。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'Let\'s go!'</span></span><br><span class="line"><span class="string">"Let's go!"</span></span><br></pre></td></tr></table></figure></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">转义字符</th>
+<th style="text-align:right">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>\</code>(在行尾时)</td>
+<td style="text-align:right">续行符</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>\\</code></td>
+<td style="text-align:right">反斜杠符号</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>\’</code></td>
+<td style="text-align:right">单引号</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>\”</code></td>
+<td style="text-align:right">双引号</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>\a</code></td>
+<td style="text-align:right">响铃</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>\b</code></td>
+<td style="text-align:right">退格(Backspace)</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>\e</code></td>
+<td style="text-align:right">转义</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>\000</code></td>
+<td style="text-align:right">空</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>\n</code></td>
+<td style="text-align:right">换行</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>\v</code></td>
+<td style="text-align:right">纵向制表符</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>\t</code></td>
+<td style="text-align:right">横向制表符</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>\r</code></td>
+<td style="text-align:right">回车</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>\f</code></td>
+<td style="text-align:right">换页</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>\oyy</code></td>
+<td style="text-align:right">八进制数，y 代表 0~7 的字符，例如：\012 代表换行。</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>\xyy</code></td>
+<td style="text-align:right">十六进制数，以 \x 开头，yy代表的字符，例如：\x0a代表换行</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>\other</code></td>
+<td style="text-align:right">其它的字符以普通格式输出</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h4 id="字符串格式化"><a href="#字符串格式化" class="headerlink" title="字符串格式化%"></a>字符串格式化<code>%</code></h4><p>字符串格式化通过百分号<code>%</code>来实现，在<code>%</code>左侧放置一个字符串，右侧放置希望被格式化的值。如果要在格式化字符串里面包括百分号，那么必须使用<code>%%</code>。<br>如果右侧是元组的话，其中的每一个元素都会被单独格式化，每个值都需要一个对应的转换说明符。右侧可以放一个值，也可以是元组或者字典，但是如果使用列表或者其他序列，会被解释成一个值。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'Price is: $%d'</span> % <span class="number">42</span></span><br><span class="line"><span class="string">'Price is: $42'</span></span><br></pre></td></tr></table></figure><br>转换符说明：</p>
 <ol>
 <li><code>%</code>字符：标记转换说明符的开始。</li>
@@ -123,9 +427,61 @@ getJSON(coindesk);
 </li>
 <li><p>点（.）后跟精度值（可选）：如果转换的是实数，精度值就表示出现在小数点后的位数，如果转换的是字符串，该数字表示的最大字段宽度。如果是<code>*</code>，那么精度将会从元组中读出。<br>字段宽度和精度都是整数，并且通过<code>.</code>分隔，如果只有精度，也需要<code>.</code>。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'%+*.*f'</span> % (<span class="number">10</span>,<span class="number">2</span>,pi)</span><br><span class="line"><span class="string">'     +3.14'</span></span><br></pre></td></tr></table></figure></li>
-<li>转换类型：<br>|转换类型|含义|<br>|-:|-:|<br>|d,i|带符号的十进制整数|<br>|o|不带符号的八进制|<br>|u|不带符号的十进制|<br>|x/X|不带符号的十六进制|<br>|e/E|科学计数法表示的浮点数|<br>|f/F|十进制浮点数|<br>|g/G|如果指数大于-4或者小于精度值则和e相同，其他情况与f/F相同|<br>|C|单字符（接受整数或者单字符字符串）|<br>|r|字符串（使用<code>repr</code>转换任意Python对象|<br>|s|字符串（使用<code>str</code>转换任意Python对象|</li>
+<li>转换类型</li>
 </ol>
-<h4 id="字符串常用方法"><a href="#字符串常用方法" class="headerlink" title="字符串常用方法"></a>字符串常用方法</h4><p><code>string.find(s, sub[, start[, end]])</code><br>在长字符串中寻找子串，返回子串所在位置的最左端索引。没有找到则返回<code>-1</code>。也可以规定寻找范围的起始点和结束点。<br><code>string.join(words[, sep])</code><br>用来连接序列中的元素<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'+'</span>.join([<span class="string">'1'</span>,<span class="string">'2'</span>,<span class="string">'3'</span>,<span class="string">'4'</span>,<span class="string">'5'</span>])</span><br><span class="line"><span class="string">'1+2+3+4+5'</span></span><br></pre></td></tr></table></figure><br><code>string.lower(s)</code><br>返回字符串的小写字母版本。另外还有两个函数用来给单词的首字母进行大写：<code>string.title()</code>和<code>string.capwords()</code>，两者有细微的区别：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">转换类型</th>
+<th style="text-align:left">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">d,i</td>
+<td style="text-align:left">带符号的十进制整数</td>
+</tr>
+<tr>
+<td style="text-align:left">o</td>
+<td style="text-align:left">不带符号的八进制</td>
+</tr>
+<tr>
+<td style="text-align:left">u</td>
+<td style="text-align:left">不带符号的十进制</td>
+</tr>
+<tr>
+<td style="text-align:left">x/X</td>
+<td style="text-align:left">不带符号的十六进制</td>
+</tr>
+<tr>
+<td style="text-align:left">e/E</td>
+<td style="text-align:left">科学计数法表示的浮点数</td>
+</tr>
+<tr>
+<td style="text-align:left">f/F</td>
+<td style="text-align:left">十进制浮点数</td>
+</tr>
+<tr>
+<td style="text-align:left">g/G</td>
+<td style="text-align:left">如果指数大于-4或者小于精度值则和e相同，其他情况与f/F相同</td>
+</tr>
+<tr>
+<td style="text-align:left">C</td>
+<td style="text-align:left">单字符（接受整数或者单字符字符串）</td>
+</tr>
+<tr>
+<td style="text-align:left">r</td>
+<td style="text-align:left">字符串（使用<code>repr</code>转换任意Python对象</td>
+</tr>
+<tr>
+<td style="text-align:left">s</td>
+<td style="text-align:left">字符串（使用<code>str</code>转换任意Python对象</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="字符串常用方法"><a href="#字符串常用方法" class="headerlink" title="字符串常用方法"></a>字符串常用方法</h4><p><code>string.center()</code><br><code>string.find(s, sub[, start[, end]])</code><br>在长字符串中寻找子串，返回子串所在位置的最左端索引。没有找到则返回<code>-1</code>。也可以规定寻找范围的起始点和结束点。搜索范围包含起点值，但不包含终点值。<br><code>string.join(words[, sep])</code><br>用来连接序列中的元素<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'+'</span>.join([<span class="string">'1'</span>,<span class="string">'2'</span>,<span class="string">'3'</span>,<span class="string">'4'</span>,<span class="string">'5'</span>])</span><br><span class="line"><span class="string">'1+2+3+4+5'</span></span><br></pre></td></tr></table></figure><br><code>string.lower(s)</code><br>返回字符串的小写字母版本。另外还有两个函数用来给单词的首字母进行大写：<code>string.title()</code>和<code>string.capwords()</code>，两者有细微的区别：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">"that's all forks"</span>.title()</span><br><span class="line"><span class="string">"That'S All Forks"</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>string.capwords(<span class="string">"that's all forks"</span>)</span><br><span class="line"><span class="string">"That's All Forks"</span></span><br></pre></td></tr></table></figure>
 <p><code>string.replace(s, old, new[, maxreplace])</code><br>该方法返回某字符串的所有匹配项均被替换之后得到的字符串。<br><code>string.split(s[, sep[, maxsplit]])</code><br>该方法用来分割字符串，如果不提供分隔符，程序会把所有的空格作为分隔符（空格，制表，换行等）<br><code>string.strip(s[, chars])</code><br>该方法会去除两侧（不包括内部）空格的字符串。也可以去掉指定的分隔符，不过注意，该方法只会去除两侧的字符。<br><code>string.translate(s, table[, deletechars])</code><br>该方法也是替换字符串中的某些部分，但是只会处理单个字符，某些时候效率比<code>string.replace(s, old, new[, maxreplace])</code>高。该函数的第二个参数是可选的，用来指定需要删除的字符。<br>使用该方法需要用到另外一个函数，<code>string.maketrans()</code>，该函数接受两个等长的字符串，表示第一个字符串中的每个字符都用第二个字符串中相同位置的字符替换。该函数实际上是一张256个字符长度的表。  </p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> string <span class="keyword">import</span> maketrans</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>table = maketrans(<span class="string">'cs'</span>,<span class="string">'kz'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>len(table)</span><br><span class="line"><span class="number">256</span></span><br></pre></td></tr></table></figure>
@@ -163,7 +519,8 @@ getJSON(coindesk);
 <h4 id="断言assert"><a href="#断言assert" class="headerlink" title="断言assert"></a>断言<code>assert</code></h4><p>该语句主要用来判断某个条件是否为真，如果否，则报错终止程序。经常用来检查函数参数的属性，或者用来作为初期测试和调试过程中的辅助条件。在语句的条件后可以添加字符串，用来解释断言。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">assert</span> a &gt; <span class="number">0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">assert</span> a &gt; <span class="number">2</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"main.py"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    <span class="keyword">assert</span> a &gt; <span class="number">2</span></span><br><span class="line">AssertionError</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">assert</span> a &gt; <span class="number">2</span>, <span class="string">'a should be larger than 2'</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"main.py"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    <span class="keyword">assert</span> a &gt; <span class="number">2</span></span><br><span class="line">AssertionError: a should be larger than <span class="number">2</span></span><br></pre></td></tr></table></figure>
 <h4 id="exec"><a href="#exec" class="headerlink" title="exec"></a><code>exec</code></h4><p>该语句是用来执行字符串中的代码</p>
-<h2 id="future-模块是什么"><a href="#future-模块是什么" class="headerlink" title="future 模块是什么"></a><strong>future</strong> 模块是什么</h2></div><div class="post-footer"><div class="meta"><div class="info"><span class="date">2020-03-24</span><a class="tag" href="/categories/Manual/" title="Manual">@Manual </a><a class="tag" href="/tags/Python/" title="Python">#Python </a></div></div></div></div><div class="post animated fadeInDown"><p style="text-align:center;color:#5F5F5F;">如果文章帮助到您，欢迎打赏</p><p style="text-align:center;color:#5F5F5F;">明天的煎饼就可以加两个蛋咯</p><p style="text-align:center;color:#5F5F5F;">୧(˶‾᷄ ⁻̫ ‾᷅˵)୨</p><div class="donate"><ul class="list" id="donateBox"><li id="BTC"></li><li id="AliPay"></li><li id="WeChat"></li></ul><div id="QRBox"><div id="MainBox"></div></div></div></div><a id="comments"></a><div id="disqus_thread"></div><script>var disqus_shortname = 'oopstavo';
+<p><strong>future</strong> (前后各两条下划线)模块是什么</p>
+<h2 id="对于Python当前不支持的，但是未来会成为标准组成部分的功能，可以从这个模块导入"><a href="#对于Python当前不支持的，但是未来会成为标准组成部分的功能，可以从这个模块导入" class="headerlink" title="对于Python当前不支持的，但是未来会成为标准组成部分的功能，可以从这个模块导入"></a>对于Python当前不支持的，但是未来会成为标准组成部分的功能，可以从这个模块导入</h2></div><div class="post-footer"><div class="meta"><div class="info"><span class="date">2020-03-24</span><a class="tag" href="/categories/Manual/" title="Manual">@Manual </a><a class="tag" href="/tags/Python/" title="Python">#Python </a></div></div></div></div><div class="post animated fadeInDown"><p style="text-align:center;color:#5F5F5F;">如果文章帮助到您，欢迎打赏</p><p style="text-align:center;color:#5F5F5F;">明天的煎饼就可以加两个蛋咯</p><p style="text-align:center;color:#5F5F5F;">୧(˶‾᷄ ⁻̫ ‾᷅˵)୨</p><div class="donate"><ul class="list" id="donateBox"><li id="BTC"></li><li id="AliPay"></li><li id="WeChat"></li></ul><div id="QRBox"><div id="MainBox"></div></div></div></div><a id="comments"></a><div id="disqus_thread"></div><script>var disqus_shortname = 'oopstavo';
 var disqus_identifier = 'Manual/Python/';
 var disqus_title = 'Python 命令快速查看手册';
 var disqus_url = 'https://oopstavo.com/Manual/Python/';
