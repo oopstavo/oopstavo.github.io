@@ -34,4 +34,4 @@ jobs:
           git config --global user.email "lxh56b@gmail.com"
           npx hexo deploy
         env:
-          HEXO_DEPLOYER_REPO: https://oopstavo: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@github.com/oopstavo/oopstavo.github.io.git
+          HEXO_DEPLOYER_REPO: https://oopstavo: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@github.com:oopstavo/oopstavo.github.io.git
