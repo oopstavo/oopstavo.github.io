@@ -11,7 +11,7 @@ jobs:
 
     steps:
       # 检出源码
-      - name: Checkout code
+      - name: Checkout codes
         uses: actions/checkout@v4
 
       # 设置 Node.js 环境
