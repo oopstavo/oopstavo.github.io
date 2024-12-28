@@ -1,0 +1,17 @@
+doctype
+html
+  head
+    include head 
+
+  body
+    // 引入 sidebar.jade
+    include sidebar
+    .main
+      // 引入 nav.jade
+      include nav
+
+      block content
+
+    //- script(src= url_for('js/jquery.js'))
+    //- script(src= url_for('js/jquery-migrate-1.2.1.min.js'))
+    //- script(src= url_for('js/jquery.appear.js'))

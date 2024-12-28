@@ -1,0 +1,37 @@
+name: Deploy Hexo to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 检出源码
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 设置 Node.js 环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      # 安装依赖并生成静态文件
+      - name: Install dependencies and build site
+        run: |
+          npm install
+          npm install hexo-cli -g
+          hexo clean && hexo generate
+
+      # 部署到 GitHub Pages 仓库
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --global user.name "oopstavo"
+          git config --global user.email "lxh56b@gmail.com"
+          npx hexo deploy
+        env:
+          HEXO_DEPLOYER_REPO: https://oopstavo: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@github.com/oopstavo/oopstavo.github.io.git

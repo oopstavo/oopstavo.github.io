@@ -1,0 +1,69 @@
+
+meta(charset="utf-8")
+meta(name="X-UA-Compatible", content="IE=edge")
+meta(name="author", content= theme.author)
+title
+    block site_title
+        = config.title
+block description
+    meta(name="description", content= config.description ? config.description : 'A Blog Powered By Hexo')
+
+if page.keywords
+    meta(name="keywords", content= page.keywords)
+else
+    meta(name="keywords" content= theme.keywords)
+
+meta(content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0",name="viewport")
+meta(content="yes",name="apple-mobile-web-app-capable")
+meta(content="black",name="apple-mobile-web-app-status-bar-style")
+meta(content="telephone=no",name="format-detection")
+meta(name="renderer",content="webkit")
+link(rel="short icon", href="/images/favicon.ico",type="image/x-icon")
+link(rel="stylesheet", href= url_for('css/style.css'))
+link(rel="stylesheet", href= url_for('css/blog_basic.css'))
+link(rel="stylesheet", href= url_for('css/font-awesome.min.css'))
+link(rel="stylesheet", href= url_for('css/donate.css'))
+link(rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml")
+script(async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js")
+script(src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js")
+script(type="text/javascript" src="/js/donate.js")
+
+script.
+    var coindesk = "https://blockchain.info/ticker";
+    var getJSON = function(url) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.responseType = 'json';
+        xhr.onload = function() {
+            var status = xhr.status;
+            if (status == 200) {
+                document.getElementById("bprice").innerHTML = xhr.response.CNY.last;
+            } else {
+                document.getElementById("bprice").innerHTML = xhr.response.status;
+            };
+        };
+        xhr.send();
+    };
+    getJSON(coindesk);
+
+script(type="text/x-mathjax-config").
+    MathJax.Hub.Config({
+        menuSettings: {
+        zoom: "None"
+        },
+        showMathMenu: false,
+        jax: ["input/TeX","output/CommonHTML"],
+        extensions: ["tex2jax.js"],
+        TeX: {
+        extensions: ["AMSmath.js","AMSsymbols.js"],
+        equationNumbers: {
+            autoNumber: "AMS"
+        }
+        },
+        tex2jax: {
+        inlineMath: [["\\(", "\\)"]],
+        displayMath: [["\\[", "\\]"]]
+        }
+    });
+
+script(type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js")

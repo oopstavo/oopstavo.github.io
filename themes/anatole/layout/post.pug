@@ -1,0 +1,28 @@
+extends partial/layout.pug
+
+include mixins
+block site_title
+    != page.title + "·" + config.title
+
+block description
+    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/,'').substring(0, 150);
+    meta(name="description", content=desc)
+
+block content
+  .autopagerize_page_element: .content: .post-page
+    include mixins
+    +make_post(page, true)
+    
+    .post.animated.fadeInDown
+      p(style="text-align:center;color:#5F5F5F;") 如果文章帮助到您，欢迎打赏
+      p(style="text-align:center;color:#5F5F5F;") 明天的煎饼就可以加两个蛋咯
+      p(style="text-align:center;color:#5F5F5F;") ୧(˶‾᷄ ⁻̫ ‾᷅˵)୨
+      div.donate
+        ul#donateBox.list
+          li#BTC
+          li#AliPay
+          li#WeChat
+        div#QRBox
+          div#MainBox
+    if page.comments
+        include partial/comments

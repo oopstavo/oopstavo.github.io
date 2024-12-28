@@ -1,0 +1,19 @@
+# Blog
+keywords: Hexo,HTML,CSS,android,Linux
+author: Author Name,name@example.com
+description: Nothing lasts forever.
+avatar: /images/favicon.webp
+
+# Social Accounts
+twitter:
+rss:
+weibo:
+instagram:
+github:
+facebook:
+
+# Comment
+disqus:
+gentie:
+
+google_analytics: false

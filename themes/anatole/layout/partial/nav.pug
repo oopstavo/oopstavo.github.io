@@ -1,0 +1,47 @@
+.page-top.animated.fadeInDown
+  .nav
+    li
+      if is_home()
+        a.current(href="/")= __('All')					
+      else
+        a(href="/")= __('All')	
+    li
+      if is_current("/categories/CS/")
+        a.current(href="/categories/CS/")= __('CS')			
+      else
+        a(href="/categories/CS/")= __('CS')
+    li
+      if is_current("/categories/Manual/")
+        a.current(href="/categories/Manual/")= __('Manual')			
+      else
+        a(href="/categories/Manual/")= __('Manual')
+    li
+      if is_current("/categories/Blockchain/")
+        a.current(href="/categories/Blockchain/")= __('Blockchain')			
+      else
+        a(href="/categories/Blockchain/")= __('Blockchain')
+    li
+      if is_current("/categories/Reading/")
+        a.current(href="/categories/Reading/")= __('Reading')			
+      else
+        a(href="/categories/Reading/")= __('Reading')
+    li
+      if is_current("/categories/Others/")
+        a.current(href="/categories/Others/")= __('Others')			
+      else
+        a(href="/categories/Others/")= __('Others')
+    //- li
+      if is_archive()
+        a.current(href="/archives/")= __('Archive')
+      else
+        a(href="/archives/")= __('Archive')    
+    li
+      if is_current('About/index/')
+        a.current(href="/About/")= __('About')			
+      else
+        a(href="/About/")= __('About')
+  //- li
+  //-   if is_current('links')
+  //-     a.current(href="/links")= __('Links')					
+  //-   else
+  //-     a(href="/links")= __('Links')		    
