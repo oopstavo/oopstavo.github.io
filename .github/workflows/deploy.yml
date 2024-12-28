@@ -40,5 +40,5 @@ jobs:
         with:
           personal_token: ${{ secrets.PAT_GITHUB_ACTION }}
           publish_dir: ./public
-          external_repository: oopstavo/oopstavo.github.io.git # 更改为你的 GitHub Pages 仓库, username 是你的用户名
+          external_repository: oopstavo/oopstavo.github.io # 更改为你的 GitHub Pages 仓库, username 是你的用户名
           publish_branch: master # GitHub Pages 分支
